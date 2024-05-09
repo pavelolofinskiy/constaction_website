@@ -11,9 +11,4 @@
 
 <?php
 
-function olofinskiy_name_reciver(){
-}
-
-olofinskiy_name_reciver()
-
 ?>
