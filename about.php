@@ -19,11 +19,9 @@
 
 <main>
     <div class="my-div">
-        <p class='main-p'>Welcome</p>
-        <p class=''>This is my first site that i really want it to be as much good as possible, <br>to highlight my best skills in portfolio</p>
+        <p class='main-p'>About us</p>
     </div>
 </main>
 
 </body>
 </html>
-

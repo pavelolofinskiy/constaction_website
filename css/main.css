@@ -1,3 +1,12 @@
+.menu-positioning  {
+    text-align: right;
+    padding-right: 70px;
+}
+
+.spacing {
+    padding-right: 10px;
+    padding-left: 10px;
+}
 
 .centered-text {
     text-align: center; 
@@ -8,10 +17,6 @@ a {
     margin-right: 20px;
     color: rgb(255, 255, 255);
     font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
-}
-
-p {
-    color: aliceblue;
 }
 
 a:link {
@@ -31,8 +36,10 @@ text-decoration: none;
 }
 
 .my-div {
+    border-radius: 10px;
     background-color: rgb(41, 38, 38);
     padding-top: 10px;
+    padding-bottom: 30px;
     margin-top: 100px;
     width: 100%;
     height: 100px;
@@ -43,4 +50,14 @@ text-decoration: none;
     padding-bottom: 15px;
     background-color: rgb(82, 82, 82);
     border: 20px color(from);
+}
+
+p {
+    text-align: center;
+    padding-top: 10px;
+    color: rgb(255, 255, 255);
+}
+
+.main-p {
+    font-size: 30px;
 }
