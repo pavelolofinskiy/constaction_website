@@ -19,6 +19,11 @@
         <a class="spacing" href="contact.php">Contact</a>
         <a class="spacing" href="about.php">About</a>
     </nav> --> 
+    <nav class="left_spacing menu-positioning">
+        <a class="spacing" href="index.php">Home</a>
+        <a class="spacing" href="contact.php">Contact</a>
+        <a class="spacing" href="about.php">About</a>
+    </nav> 
 </header>
 
 <main class="my-main">
@@ -26,6 +31,7 @@
         <p class='main-p'>Welcome</p>
         <p class=''>This is my first site that i really want it to be as much good as possible, <br>to highlight my best skills in portfolio</p>
     </div>
+    
 </main>
 
 </body>
