@@ -15,7 +15,7 @@
         <a class="spacing" href="contact.php">Contact</a>
         <a class="spacing" href="about.php">About</a>
     </nav>
-</header>
+</header> 
 
 <main>
     <div class="my-div">
