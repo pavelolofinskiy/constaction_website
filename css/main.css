@@ -1,6 +1,12 @@
-.menu-positioning  {
-    text-align: right;
-    padding-right: 70px;
+@font-face {
+    font-family: MyNunito;
+    src: url(../fonts/Nunito-VariableFont_wght.ttf);
+}
+
+
+
+body {
+    background-color: #F2F2F2;
 }
 
 .spacing {
@@ -8,32 +14,37 @@
     padding-left: 10px;
 }
 
-.centered-text {
-    text-align: center; 
-    font-size: 50px;
-}
-
-a {
+.a-menu {
     margin-right: 20px;
+    color: #1E1E1E;
+    font-family: MyNunito, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.a-menu:link {
+text-decoration: none;
+}
+
+.a-menu:visited {
+text-decoration: none;
+}
+
+
+.a-button {
     color: rgb(255, 255, 255);
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
 }
 
-a:link {
+.a-button:link {
 text-decoration: none;
 }
 
-a:visited {
+.a-button:visited {
 text-decoration: none;
 }
 
-a:hover {
-text-decoration: none;
-}
-
-a:active {
-text-decoration: none;
-}
 
 .my-main {
     padding-top: 100px;
@@ -41,7 +52,7 @@ text-decoration: none;
 
 .my-div {
     border-radius: 10px;
-    background-color: rgb(41, 38, 38);
+    background-color: rgb(255, 255, 255);
     padding-top: 10px;
     padding-bottom: 30px;
     width: 100%;
@@ -49,18 +60,19 @@ text-decoration: none;
 }
 
 .my-header {
-    height: 450px;
-    background-color: rgb(82, 82, 82);
-    border: 20px color(from);
+    height: 50px;
+    background-color: rgb(255, 255, 255);
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-direction: row; 
+    align-items: center;
 }
 
 p {
+    font-family: MyNunito, sans-serif;
     text-align: center;
     padding-top: 10px;
-    color: rgb(255, 255, 255);
+    color: #1E1E1E;
     display: flex;
     justify-content: center;
 }
@@ -69,30 +81,25 @@ p {
     font-size: 30px;
 }
 
-.my-image {
-    width: 1266px;
-    height: 1000px;
-    background-image: url(../img/stone-wall.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    
+.my-div1 {
+  
+    height: 30px;
+    width: 410px;
 }
 
-.my-header .div-1 {
-    background-color:black;
-    flex-basis: 100px;
-    flex-grow: 2;
+.my-header-logo {
+    height: 35px;
+    width: 209px;
 }
 
-.my-header .div-2 {
-    background-color: blue;
-    flex-basis: 100px;
-    flex-grow: 4;
-}
-
-.my-header .div-3 {
-    background-color: brown;
-    flex-basis: 100px;
-    flex-grow: 2;
+.touch-button {
+    font-size: 18px;
+    font-weight: 700;
+    font-family: MyNunito, sans-serif;
+    width: 157px;
+    height: 44px;
+    background-color: #FACA10;
+    color: rgb(255, 255, 255);
+    border: 0px solid;
+    border-radius: 10px;
 }

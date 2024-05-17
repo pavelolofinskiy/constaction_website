@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <link rel="stylesheet" href="css\reset.css">
     <link rel="stylesheet" href="css\main.css">
     <meta charset="UTF-8">
@@ -10,12 +11,22 @@
 <body>
 
 <header class="my-header">
-    <nav class="left_spacing menu-positioning">
-        <a class="spacing" href="index.php">Home</a>
-        <a class="spacing" href="contact.php">Contact</a>
-        <a class="spacing" href="about.php">About</a>
-    </nav>
+    <div class='my-div1'>
+        <img class='my-header-logo' src='img/logo.png'>
+    </div>
+    <nav class="menu-positioning">
+        <a class="a-menu" href="index.php">Home</a>
+        <a class="a-menu" href="about.php">Solutions</a>
+        <a class="a-menu" href="about.php">Cases</a>
+        <a class="a-menu" href="about.php">About</a>
+        <a class="a-menu" href="contact.php">Contact</a>
+        <a class="a-button" href="contact.php">
+            <button class="touch-button">Get in Touch</a>    
+        </a>
+        
+    </nav> 
 </header>
+
 
 <main>
     <div class="my-div">
