@@ -10,19 +10,19 @@
 <body>
 
 <header class="my-header">
-    <div class='my-div1'>
-        <img class='my-image' src='img/logo.png'>
-    </div>
-    <nav class="menu-positioning">
-        <a class="a-menu" href="index.php">Home</a>
-        <a class="a-menu" href="about.php">Solutions</a>
-        <a class="a-menu" href="about.php">Cases</a>
-        <a class="a-menu" href="about.php">About</a>
-        <a class="a-menu" href="contact.php">Contact</a>
-        <a class="a-button" href="contact.php">
-            <button class="touch-button">Get in Touch</a>    
+    <div class='my-logo-div'>
+        <a class='my-header-logo' href='index.php'>
+            <img src='img/logo.png'>
         </a>
-    </nav> 
+    </div>
+    <nav class="my-header-nav">
+        <a class="nav-menu" href="index.php">Home</a>
+        <a class="nav-menu" href="about.php">Solutions</a>
+        <a class="nav-menu" href="about.php">Cases</a>
+        <a class="nav-menu" href="about.php">About</a>
+        <a class="nav-menu" href="contact.php">Contact</a>
+        <a class='a-button' href='contact.php'>Get in touch</a>
+    </nav>
 </header>
 
 

@@ -10,27 +10,27 @@
 <body>
 
 <header class="my-header">
-    <div class='my-div1'>
-        <img class='my-header-logo' src='img/logo.png'>
+    <div class='my-logo-div'>
+        <a class='my-header-logo' href='index.php'>
+            <img src='img/logo.png'>
+        </a>
     </div>
     <nav class="my-header-nav">
-        <a class="a-menu" href="index.php">Home</a>
-        <a class="a-menu" href="about.php">Solutions</a>
-        <a class="a-menu" href="about.php">Cases</a>
-        <a class="a-menu" href="about.php">About</a>
-        <a class="a-menu" href="contact.php">Contact</a>
-        <a class="a-button" href="contact.php">
-            <button class="touch-button">Get in Touch</a>    
-        </a>
-        
-    </nav> 
+        <a class="nav-menu" href="index.php">Home</a>
+        <a class="nav-menu" href="about.php">Solutions</a>
+        <a class="nav-menu" href="about.php">Cases</a>
+        <a class="nav-menu" href="about.php">About</a>
+        <a class="nav-menu" href="contact.php">Contact</a>
+        <a class='a-button' href='contact.php'>Get in touch</a>
+    </nav>
 </header>
 
-<main class="my-main">
-    <div class="my-div">
-        <p class='main-p'>Welcome</p>
-        <p class=''>This is my first site that i really want it to be as much good as possible, <br> to highlight my best skills in portfolio</p>
-    </div>  
+<main class='my-main'>
+    <div class='my-div'>
+
+    </div>
+</main>
+
 </main>
 
 </body>
