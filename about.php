@@ -17,7 +17,7 @@
         </a>
     </div>
     <nav class="my-header-nav">
-        <a class="nav-menu" href="index.php">Home</a>
+        <a class="nav-menu" href="index.html">Home</a>
         <a class="nav-menu" href="about.php">Solutions</a>
         <a class="nav-menu" href="about.php">Cases</a>
         <a class="nav-menu" href="about.php">About</a>
