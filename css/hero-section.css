@@ -11,29 +11,40 @@
         background-repeat: no-repeat;
         background-position: center;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        align-content: center;
+        justify-content:left;
         flex-direction: column;
     }
 
 
     .hero-section-div-p {
-        color: rgba(18, 3, 3);
-        font-size:  3.3rem;
+        color: var(--text-color);
+        font-size:  3rem;
         text-align: left;
-        margin-top: 6rem;
+        margin-top: 17rem;
+        margin-left: 1rem;
     }
     
-    .hero-section-div-p-second {
+    .hero-section-div-p-mobile {
         margin-top: 0.6rem; 
         text-align: start;
-        margin-right: 1.2rem;
+        color: var(--text-color);
+        font-size: 1.1rem;
+        margin-left: 1.1rem;
+        padding-right: 2rem;
     }
     
+    .hero-section-div-p-tablet {
+        margin-top: 0.6rem; 
+        text-align: start;
+        display: none;
+        color: var(--text-color);
+        font-size: clamp(1rem, 1vw, 3rem);
+    }
     
     .hero-section-div-button-container {
         margin-top: 2rem;
-        margin-right: 9rem;
+        margin-left: 1.1rem;
     }
 
     .hero-section-div-button {
@@ -52,12 +63,61 @@
 
 @media (min-width: 480px) {
 
-
-    .hero-section-div-p {
-        color: orange;
-        margin-right: 8rem;
-        font-size: clamp(4rem, 5vw + 2rem, 7rem);
-        text-align: left;
+    .overlay {
+        border-image-source: linear-gradient(#dcdcdc86, #dcdcdcb4);
+        border-image-slice: fill 1;
     }
 
+    .hero-section-div {
+        min-block-size: 90vh;
+        background:url(../img/hero-section-image2.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+
+    
+    .hero-section-div-button-container {
+        margin-top: 2rem;
+        margin-right: 9rem;
+    }
+
+    .hero-section-div-button {
+        background-color: var(--second-color);
+        color: rgb(255, 255, 255);
+        font-family: MyNunito, sans-serif;
+        font-size: 1.2rem;
+        font-weight: 700;
+        font-style: normal;
+        padding: 0.8rem 1.6rem;
+        line-height: 20px;
+        border-radius: 4px;
+    }
+
+    .hero-section-div-p {
+        color: var(--text-color);
+        margin-right: 25vw;
+        font-size: clamp(4rem, 5vw + 2rem, 7rem);
+        text-align: left;
+        color: var(--text-color);
+    }
+
+    .hero-section-div-p-mobile {
+        margin-top: 0.6rem; 
+        text-align: start;
+        margin-right: 1.2rem;
+        display: none;
+        color: var(--text-color);
+    }
+
+    .hero-section-div-p-tablet {
+        margin-top: 0.6rem; 
+        text-align: start;
+        margin-right: 1.2rem;
+    }
 }
