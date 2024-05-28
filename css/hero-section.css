@@ -12,7 +12,7 @@
         background-position: center;
         display: flex;
         align-content: center;
-        justify-content:left;
+        justify-content:center;
         flex-direction: column;
     }
 
@@ -21,8 +21,8 @@
         color: var(--text-color);
         font-size:  3rem;
         text-align: left;
-        margin-top: 17rem;
         margin-left: 1rem;
+        margin-top: 5rem;
     }
     
     .hero-section-div-p-mobile {
