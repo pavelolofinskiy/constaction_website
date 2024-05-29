@@ -10,16 +10,18 @@
     src: url(../fonts/Roboto-Bold.ttf);
 }
 
+@font-face {
+    font-family: RobotoMedium;
+    src: url(../fonts/Roboto-Medium.ttf);
+}
+
+
 body {
     background-color: var(--general-background);
 }
 
-p { margin-top: -20px; }
-
-
 p {
     font-family: Roboto, sans-serif;
-    padding-top: 10px;
     color: var(--text-color);
 }
 

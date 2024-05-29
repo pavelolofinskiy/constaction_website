@@ -1,11 +1,11 @@
-@media (max-width: 480px) {
+@media (max-width: 507px) {
     .overlay {
         border-image-source: linear-gradient(#dcdcdc86, #dcdcdcb4);
         border-image-slice: fill 1;
     }
 
     .hero-section-div {
-        min-block-size: 90vh;
+        min-block-size: 85vh;
         background:url(../img/hero-section-imagee.png);
         background-size: cover;
         background-repeat: no-repeat;
@@ -16,20 +16,34 @@
         flex-direction: column;
     }
 
+    .hero-section-div-elements {
+        margin-top: 5rem;
+        margin-left: 0.6rem;
+    }
+    
+    .hero-section-div-p-mobile-container {
+        padding-right: 2rem;
+    }
+
+    .hero-section-div-p-notebooks {
+        display: none;
+    }
 
     .hero-section-div-p {
         color: var(--text-color);
-        font-size:  3rem;
+        font-weight: 900;
+        font-size:  2.8rem;
         text-align: left;
         margin-left: 1rem;
         margin-top: 5rem;
     }
     
     .hero-section-div-p-mobile {
-        margin-top: 0.6rem; 
+        margin-top: 0.9rem; 
         text-align: start;
         color: var(--text-color);
-        font-size: 1.1rem;
+        font-size: 0.8rem;
+        font-family: RobotoMedium;
         margin-left: 1.1rem;
         padding-right: 2rem;
     }
@@ -41,9 +55,15 @@
         color: var(--text-color);
         font-size: clamp(1rem, 1vw, 3rem);
     }
+
+    .hero-section-div-p-third {
+        font-size: 0.7rem;
+        margin-top: 1rem; 
+        font-family: RobotoMedium;
+    }
     
     .hero-section-div-button-container {
-        margin-top: 2rem;
+        margin-top: 1.5rem;
         margin-left: 1.1rem;
     }
 
@@ -51,21 +71,62 @@
         background-color: var(--second-color);
         color: rgb(255, 255, 255);
         font-family: MyNunito, sans-serif;
-        font-size: 1.2rem;
+        font-size: 0.7rem;
         font-weight: 700;
         font-style: normal;
-        padding: 0.8rem 1.6rem;
+        padding: 0.7rem 1.2rem;
         line-height: 20px;
         border-radius: 4px;
     }
 
+    .hero-section-div-button2 {
+        background-color: var(--general-background);
+        color: var(--text-color);
+        font-family: MyNunito, sans-serif;
+        font-size: 0.7rem;
+        font-weight: 700;
+        font-style: normal;
+        padding: 0.6rem 1.0rem;
+        line-height: 20px;
+        border-radius: 4px;
+        border: 3px solid;
+        border-color: var(--second-color);
+        margin-left: 0.5rem;
+    }
+
+    .hero-section-div-image {
+        display: none;
+    }
+
+    .hero-section-div-amount-p {
+        display: none;
+    }
+    
+    .hero-section-div-amount-p-engineers {
+        display: none;
+    }
+
 }
 
-@media (min-width: 480px) {
+@media (507px <= width <= 760px) {
 
     .overlay {
         border-image-source: linear-gradient(#dcdcdc86, #dcdcdcb4);
         border-image-slice: fill 1;
+    }
+
+    .hero-section-div-elements {
+        margin-top: 9rem;
+        margin-right: 10vh;
+        margin-left: 2rem;
+    }
+
+    .hero-section-div-button-container {
+        width: 100%;
+    }
+    
+    .hero-section-div-p-notebooks {
+        display: none;
     }
 
     .hero-section-div {
@@ -89,23 +150,42 @@
         background-color: var(--second-color);
         color: rgb(255, 255, 255);
         font-family: MyNunito, sans-serif;
-        font-size: 1.2rem;
+        font-size: 1rem;
         font-weight: 700;
         font-style: normal;
         padding: 0.8rem 1.6rem;
         line-height: 20px;
         border-radius: 4px;
+        margin-left: 0.3rem;
     }
+
+    
+    .hero-section-div-button2 {
+        background-color: var(--general-background);
+        color: #222220;
+        font-family: MyNunito, sans-serif;
+        font-size: 1rem;
+        font-weight: 700;
+        font-style: normal;
+        padding: 0.7rem 1.2rem;
+        line-height: 20px;
+        border-radius: 4px;
+        border: 3px solid;
+        border-color: var(--second-color);
+        margin-left: 0.5rem;
+    }
+
 
     .hero-section-div-p {
         color: var(--text-color);
-        margin-right: 25vw;
-        font-size: clamp(4rem, 5vw + 2rem, 7rem);
+        font-size: 4rem;
+        font-weight: 900;
         text-align: left;
         color: var(--text-color);
     }
 
     .hero-section-div-p-mobile {
+        
         margin-top: 0.6rem; 
         text-align: start;
         margin-right: 1.2rem;
@@ -114,8 +194,188 @@
     }
 
     .hero-section-div-p-tablet {
+        width: 100%;
+        margin-left: 0.3rem;
+        margin-top: 0.6rem; 
+        text-align: left;
+        font-family: RobotoMedium;
+   
+    }
+
+    .hero-section-div-p-third {
+        margin-left: 0.3rem;
+        font-size: 0.9rem;
+        margin-top: 1.5rem; 
+        font-family: RobotoMedium;
+    }
+    
+    .hero-section-div-image {
+        display: none;
+    }
+
+    .hero-section-div-amount-p {
+        display: none;
+    }
+    
+    .hero-section-div-amount-p-engineers {
+        display: none;
+    }
+}
+
+@media (760px < width <= 1023px) {
+
+
+    .hero-section-div {
+        min-block-size: 90vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;    
+    }
+
+
+    .hero-section-div-p {
+        color: var(--second-color);
+        font-weight: 900;
+        font-size:  3.5rem;
+        text-align: left;
+        margin-left: 1rem;
+        margin-top: 5rem;
+    }
+
+    .hero-section-div-elements {
+        margin-left: 2.5rem;
+    }
+    
+    .hero-section-div-p-mobile {
+        display: none;
         margin-top: 0.6rem; 
         text-align: start;
-        margin-right: 1.2rem;
+        color: var(--text-color);
+        font-size: 0.9rem;
+        font-family: RobotoMedium;
+        margin-left: 1.1rem;
+        padding-right: 2rem;
     }
+    
+    .hero-section-div-p-tablet {
+        font-family: RobotoMedium;
+        margin-left: 1.1rem;
+        margin-top: 0.6rem; 
+        font-size: 0.4rem;
+        font-weight: 400;
+        text-align: start;
+        color: var(--text-color);
+        font-size: clamp(1rem, 1vw, 3rem);
+        display: none;
+    }
+
+    .hero-section-div-p-notebooks {
+        font-family: RobotoMedium;
+        margin-left: 1.1rem;
+        margin-top: 1.5rem; 
+        font-size: 0.8rem;
+        font-weight: 100;
+        text-align: start;
+        color: var(--text-color);
+      }
+
+    .hero-section-div-p-third {
+        font-size: 0.8rem;
+        margin-top: 2rem;
+        font-family: RobotoMedium;
+    }
+    
+    .hero-section-div-button-container {
+        margin-top: 2rem;
+        margin-left: 1.1rem;
+    }
+
+    .hero-section-div-button {
+        background-color: var(--second-color);
+        color: rgb(255, 255, 255);
+        font-family: MyNunito, sans-serif;
+        font-size: 0.9rem;
+        font-weight: 700;
+        font-style: normal;
+        padding: 0.8rem 1.6rem;
+        line-height: 20px;
+        border-radius: 4px;
+    }
+
+    .hero-section-div-button2 {
+        background-color: var(--general-background);
+        color: var(--text-color);;
+        font-family: MyNunito, sans-serif;
+        font-size: 0.9rem;
+        font-weight: 700;
+        font-style: normal;
+        padding: 0.7rem 1.2rem;
+        line-height: 20px;
+        border-radius: 4px;
+        border: 3px solid;
+        border-color: var(--second-color);
+        margin-left: 0.5rem;
+    }
+
+    .hero-section-div-image-grid {
+        display: grid;
+        grid-template-columns: repeat(5, 5rem);
+        margin-top: 0.8rem;
+    }
+
+    .hero-section-div-image, .hero-section-div-styling, .hero-section-div-amount{
+        grid-row: 1 / 2;
+        margin-top: 4.5rem;
+    }
+
+    .hero-section-div-image {
+        margin-top: 6rem;
+        margin-left: 4rem;
+        grid-column: 1 / 3;
+        width: 16rem;
+        border-radius: 10px;
+        border: 4px solid;
+        border-color: var(--second-color);
+    }
+
+    .hero-section-div-styling {
+        margin-left: 2.25rem;
+        grid-column: 1 / -1;
+        width: 15.5rem;
+        height: 15.5rem;
+        background-color: var(--second-color);
+        z-index: -1;
+        border-radius: 10px;
+    }
+
+    .hero-section-div-amount {
+        margin-left: 12.5rem;
+        margin-top: 19rem;
+        grid-column: 1 / -1;
+        background-color: var(--general-background);
+        width: 9.2rem;
+        height: 4.5rem;
+        border-radius: 10px;
+        border: 4px solid;
+        border-color: var(--second-color);
+    }
+
+    .hero-section-div-amount-p {
+        font-size: 2.4rem;
+        margin-left: 0.2rem;
+        text-align: center;
+        margin-top: 0.46rem;
+        width: 900;
+    }
+    
+    .hero-section-div-amount-p-engineers {
+        text-align: center;
+        margin-top: 0.1rem;
+        font-size: 0.8rem;
+    }
+
 }
