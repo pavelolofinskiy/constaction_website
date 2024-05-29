@@ -58,7 +58,7 @@
 
     .hero-section-div-p-third {
         font-size: 0.7rem;
-        margin-top: 1rem; 
+        margin-top: 1.5rem; 
         font-family: RobotoMedium;
     }
     
@@ -108,10 +108,10 @@
 
 }
 
-@media (507px <= width <= 760px) {
+@media (507px <= width <= 760px)   {
 
     .overlay {
-        border-image-source: linear-gradient(#dcdcdc86, #dcdcdcb4);
+        border-image-source: linear-gradient(#dcdcdcb8, #dcdcdcca);
         border-image-slice: fill 1;
     }
 
@@ -194,9 +194,10 @@
     }
 
     .hero-section-div-p-tablet {
+        font-size: 0.8rem;  
         width: 100%;
         margin-left: 0.3rem;
-        margin-top: 0.6rem; 
+        margin-top: 1.2rem; 
         text-align: left;
         font-family: RobotoMedium;
    
@@ -204,8 +205,8 @@
 
     .hero-section-div-p-third {
         margin-left: 0.3rem;
-        font-size: 0.9rem;
-        margin-top: 1.5rem; 
+        font-size: 0.8rem;
+        margin-top: 2rem; 
         font-family: RobotoMedium;
     }
     
@@ -248,6 +249,7 @@
 
     .hero-section-div-elements {
         margin-left: 3rem;
+        margin-right: 2rem;
     }
     
     .hero-section-div-p-mobile {
@@ -382,8 +384,8 @@
 
 @media (1023px < width <= 6000px) {
 
-
     .hero-section-div {
+        margin-top: 0.5rem;
         min-block-size: 90vh;
         background-size: cover;
         background-repeat: no-repeat;
@@ -394,18 +396,17 @@
         flex-direction: row;    
     }
 
-
     .hero-section-div-p {
         color: var(--second-color);
         font-weight: 900;
-        font-size:  3.5rem;
+        font-size:  4.5rem;
         text-align: left;
-        margin-left: 1rem;
+        margin-left: 0.7rem;
         margin-top: 5rem;
     }
 
     .hero-section-div-elements {
-        margin-left: 3rem;
+        margin-right: 3.5rem;
     }
     
     .hero-section-div-p-mobile {
@@ -434,7 +435,7 @@
     .hero-section-div-p-notebooks {
         font-family: RobotoMedium;
         margin-left: 1.1rem;
-        margin-top: 1.5rem; 
+        margin-top: 1.8rem; 
         font-size: 0.8rem;
         font-weight: 100;
         text-align: start;
@@ -443,12 +444,12 @@
 
     .hero-section-div-p-third {
         font-size: 0.8rem;
-        margin-top: 2rem;
+        margin-top: 2.5rem;
         font-family: RobotoMedium;
     }
     
     .hero-section-div-button-container {
-        margin-top: 2rem;
+        margin-top: 2.2rem;
         margin-left: 1.1rem;
     }
 
@@ -456,7 +457,7 @@
         background-color: var(--second-color);
         color: rgb(255, 255, 255);
         font-family: MyNunito, sans-serif;
-        font-size: 0.9rem;
+        font-size: 1rem;
         font-weight: 700;
         font-style: normal;
         padding: 0.8rem 1.6rem;
@@ -468,7 +469,7 @@
         background-color: var(--general-background);
         color: var(--text-color);;
         font-family: MyNunito, sans-serif;
-        font-size: 0.9rem;
+        font-size: 1rem;
         font-weight: 700;
         font-style: normal;
         padding: 0.7rem 1.2rem;
@@ -494,7 +495,7 @@
         margin-top: 6rem;
         margin-left: 4rem;
         grid-column: 1 / 3;
-        width: 16rem;
+        width: 20rem;
         border-radius: 10px;
         border: 4px solid;
         border-color: var(--second-color);
@@ -503,27 +504,27 @@
     .hero-section-div-styling {
         margin-left: 2.25rem;
         grid-column: 1 / -1;
-        width: 15.5rem;
-        height: 15.5rem;
+        width: 19.5rem;
+        height: 19.5rem;
         background-color: var(--second-color);
         z-index: -1;
         border-radius: 10px;
     }
 
     .hero-section-div-amount {
-        margin-left: 12.5rem;
-        margin-top: 19rem;
+        margin-left: 15rem;
+        margin-top: 22.5rem;
         grid-column: 1 / -1;
         background-color: var(--general-background);
-        width: 9.2rem;
-        height: 4.5rem;
+        width: 10.6rem;
+        height: 5.22rem;
         border-radius: 10px;
         border: 4px solid;
         border-color: var(--second-color);
     }
 
     .hero-section-div-amount-p {
-        font-size: 2.4rem;
+        font-size: 2.8rem;
         margin-left: 0.2rem;
         text-align: center;
         margin-top: 0.46rem;
@@ -533,7 +534,7 @@
     .hero-section-div-amount-p-engineers {
         text-align: center;
         margin-top: 0.1rem;
-        font-size: 0.8rem;
+        font-size: 0.92rem;
     }
 
 }
