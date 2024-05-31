@@ -1,3 +1,7 @@
 .second-section {
-    margin-top: 100vh;
+    background-color: #14213D;
+}
+
+.second-section-image-div {
+    margin-bottom: 80vh;
 }

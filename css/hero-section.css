@@ -1,3 +1,8 @@
+.my-main {
+    padding-bottom: 10vh;
+}
+
+
 @media (max-width: 507px) {
     .overlay {
         border-image-source: linear-gradient(#dcdcdcb8, #dcdcdcca);
