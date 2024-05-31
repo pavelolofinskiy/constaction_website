@@ -234,7 +234,7 @@
         display: flex;
         justify-content: center;
         flex-direction: row;    
-        margin-top: 27vh;
+        margin-top: 13vh;
     }
 
 
@@ -381,11 +381,10 @@
 @media (1023px < width <= 6000px) {
 
     .hero-section-div {
-        margin-top: 12vh;
     }
 
     .hero-section-div-elements {
-        margin-right: clamp(2rem, 8vw, 10rem);
+        margin-right: clamp(2rem, 4vw, 10rem);
     }
 
     .row {
@@ -394,7 +393,7 @@
     }
 
     .hero-section-div-image {
-        margin-left: clamp(2rem, 8vw, 10rem);
+        margin-left: clamp(2rem, 4vw, 10rem);
         width: clamp(26rem, 34vw, 31rem);
         height: clamp(26rem, 34vw, 31rem);
         height: auto;

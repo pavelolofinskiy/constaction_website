@@ -26,20 +26,7 @@ p {
 }
 
 
-.my-header {
-    background-color: transparent;
-    display: flex;
-    justify-content:space-between;
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    right: 0;
-    padding-top: 30px;
-    height: 60px;
-    z-index: 1000;
 
-}
 
 .nav-toggle {
     display: none;
@@ -67,7 +54,6 @@ p {
 }
 
 .my-logo-div{
-    margin-top: 2rem;
     margin-left: 9rem;
     align-self: center; 
 }
@@ -103,6 +89,44 @@ text-decoration: none;
 }
 
 
+
+@media (max-width: 507px) {
+    .my-logo-div{
+        width: fit-content;
+        display: flex;
+        padding-left: 40px;
+    }
+
+    .nav-menu {
+        background-image: url();
+        display: none;
+        
+    }
+     
+    .nav-toggle ~ .nav-menu {
+        display: block;
+    }
+}
+
+
+@media (507px <= width <= 760px) {
+    .nav-menu {
+        margin-left: 2.3rem;
+        font-size: 1.1rem;
+        color: var(--text-color);
+    }
+
+    .my-header-nav {
+        margin-left: 0.1rem;
+    }
+
+    .my-logo-div{
+        margin-right:6.2rem;
+        align-self: center; 
+    }
+}
+
+
 @media (760px < width <= 1023px) {
     .nav-menu {
         margin-left: 2.3rem;
@@ -120,20 +144,67 @@ text-decoration: none;
     }
 }
 
-@media (max-width: 480px) {
-    .my-logo-div{
-        width: fit-content;
+@media (1023px < width <= 1600px) {
+    
+
+    .my-header {
+        background-color: transparent;
         display: flex;
-        padding-left: 40px;
+        justify-content: space-between;
+        z-index: 1000; 
+        margin-top: 2.5rem;
+    }
+
+    .my-header-nav {
+        margin-right: 6rem;
     }
 
     .nav-menu {
-        background-image: url();
-        display: none;
-        
+
+        font-size: 1.1rem;
+        color: var(--text-color);
     }
-     
-    .nav-toggle ~ .nav-menu {
-        display: block;
+
+    .my-logo-div-p{
+        margin-left: 8vw;
+        font-family: Roboto;
+
+    }
+
+    .nav-toggle {
+        background-color: #f0a500;
     }
 }
+
+
+@media (1600px < width <= 6000px) {
+    
+    .my-header {
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        z-index: 1000; 
+        margin-top: 2.5rem;
+    }
+
+    .my-header-nav {
+        margin-left: clamp(5rem, 18vw, 28rem);
+    }
+
+    .nav-menu {
+
+        font-size: 1.1rem;
+        color: var(--text-color);
+    }
+
+    .my-logo-div-p{
+        margin-right: 18rem;
+        font-family: Roboto;
+
+    }
+
+    .nav-toggle {
+        background-color: #f0a500;
+    }
+}
+
