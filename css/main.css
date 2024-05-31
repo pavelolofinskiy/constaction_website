@@ -25,9 +25,6 @@ p {
     color: var(--text-color);
 }
 
-
-
-
 .nav-toggle {
     display: none;
 }
@@ -35,7 +32,6 @@ p {
 .my-header-nav {
     align-self: center;
     font-family: Roboto, sans-serif;
-    margin-left: 12rem;
 }
 
 .nav-menu {
@@ -54,7 +50,6 @@ p {
 }
 
 .my-logo-div{
-    margin-left: 9rem;
     align-self: center; 
 }
 
@@ -91,56 +86,96 @@ text-decoration: none;
 
 
 @media (max-width: 507px) {
-    .my-logo-div{
-        width: fit-content;
+    .my-header {
+        background-color: transparent;
         display: flex;
-        padding-left: 40px;
+        justify-content: space-between;
+        position: absolute;
+        z-index: 1000; 
+        margin-top: 2.5rem;
+    }
+
+    .my-header-nav {
+        margin-right: 3rem;
+        display: none;
     }
 
     .nav-menu {
-        background-image: url();
-        display: none;
-        
+        font-size: 1rem;
+        color: var(--text-color);
     }
-     
-    .nav-toggle ~ .nav-menu {
-        display: block;
+
+    .my-logo-div-p{
+        margin-left: 2rem;
+        font-family: Roboto;
+
+    }
+
+    .nav-toggle {
+        background-color: #f0a500;
     }
 }
 
 
 @media (507px <= width <= 760px) {
-    .nav-menu {
-        margin-left: 2.3rem;
-        font-size: 1.1rem;
-        color: var(--text-color);
+    .my-header {
+        background-color: transparent;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        z-index: 1000; 
+        margin-top: 2.5rem;
     }
 
     .my-header-nav {
-        margin-left: 0.1rem;
+        margin-right: 3rem;
+        display: none;
     }
 
-    .my-logo-div{
-        margin-right:6.2rem;
-        align-self: center; 
+    .nav-menu {
+        font-size: 1rem;
+        color: var(--text-color);
+    }
+
+    .my-logo-div-p{
+        margin-left: 4.5rem;
+        font-family: Roboto;
+
+    }
+
+    .nav-toggle {
+        background-color: #f0a500;
     }
 }
 
 
 @media (760px < width <= 1023px) {
-    .nav-menu {
-        margin-left: 2.3rem;
-        font-size: 1.1rem;
-        color: var(--text-color);
+    .my-header {
+        background-color: transparent;
+        display: flex;
+        justify-content: space-between;
+        z-index: 1000; 
+        margin-top: 2.5rem;
     }
 
     .my-header-nav {
-        margin-left: 0.1rem;
+        margin-right: 3rem;
     }
 
-    .my-logo-div{
-        margin-right:6.2rem;
-        align-self: center; 
+    .nav-menu {
+
+        font-size: 1rem;
+        color: var(--text-color);
+    }
+
+    .my-logo-div-p{
+        margin-left: 8vw;
+        font-family: Roboto;
+
+    }
+
+    .nav-toggle {
+        background-color: #f0a500;
     }
 }
 
@@ -160,7 +195,6 @@ text-decoration: none;
     }
 
     .nav-menu {
-
         font-size: 1.1rem;
         color: var(--text-color);
     }
