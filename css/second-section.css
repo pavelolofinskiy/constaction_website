@@ -101,9 +101,7 @@
     }
     
     .second-section-text-div-first-p {
-        font-size: clamp(1rem, 3vw, 4rem);
-        color: #fff;
-        font-weight: 500;
+        font-size: clamp(1rem, 7vw, 4rem);
         margin-bottom: clamp(0.5rem, 4vw, 4rem);
     }
     
@@ -149,6 +147,8 @@
         max-width: 10rem;
     }
 }
+
+
 @media (1600px < width <= 6000px) {
 
     .second-section-text-div {
