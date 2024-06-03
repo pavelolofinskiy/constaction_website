@@ -70,6 +70,10 @@
     margin-right: clamp(2rem, 4vw, 7rem);
 }
 
+.second-section-text-div-second-p-mobile {
+    display: none;
+}
+
 @media (max-width: 760px) {
 
     .second-section {
@@ -105,7 +109,7 @@
         margin-bottom: clamp(0.5rem, 4vw, 4rem);
     }
     
-    .second-section-text-div-second-p-mobile {
+    .second-section-text-div-second-p {
         font-family: RobotoMedium;
         font-size: clamp(0.4rem, 2.4vw, 51rem);
         color: var(--general-background);
@@ -114,10 +118,6 @@
     
     }
 
-    .second-section-text-div-second-p {
-        display: none;
-    
-    }
     
     .second-section-image {
         width: clamp(14rem, 80vw, 60rem);
@@ -156,6 +156,9 @@
 
 @media (1600px < width <= 6000px) {
 
+
+    
+    
     .second-section-text-div {
         margin-top: 3rem;
     }
