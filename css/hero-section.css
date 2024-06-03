@@ -20,7 +20,7 @@
     .hero-section-div-elements {
         margin-top: 22vh;
         margin-left: 0.6rem;
-        margin-bottom: 7rem;
+        margin-bottom: 3rem;
     }
     
     .hero-section-div-p-mobile-container {
@@ -350,7 +350,7 @@
 @media (1023px < width <= 6000px) {
 
     .my-main {
-        padding-bottom: 10vh;
+        padding-bottom: 8rem;
     }
 
     .hero-section-div-elements {
