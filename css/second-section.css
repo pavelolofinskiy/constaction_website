@@ -1,7 +1,184 @@
+
 .second-section {
     background-color: #14213D;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+.second-section-div {
+    display: flex;
+    justify-content: center;
+}
+
+.second-section-text-div {
+    max-width: 50rem;
+    margin-top: clamp(1rem, 4vw, 7rem);
+    margin-left: clamp(1rem, 4vw, 7rem);
+}
+
+.second-section-text-div-divider {
+    background-color: #fff;
+    height: clamp(0.2rem, 0.6vw, 1rem);
+    width: clamp(0.8rem, 7vw, 8rem);
+    margin-bottom: clamp(0.5rem, 4vw, 4rem);
+}
+
+.second-section-text-div-first-p {
+    font-size: clamp(1rem, 3vw, 4rem);
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: clamp(0.5rem, 4vw, 4rem);
+}
+
+.second-section-text-div-second-p {
+    font-family: RobotoMedium;
+    font-size: clamp(0.2rem, 1vw, 1rem);
+    color: var(--general-background);
+    font-weight: 300;
+    margin-bottom: clamp(0.5rem, 4vw, 4rem);
+
 }
 
 .second-section-image-div {
-    margin-bottom: 80vh;
+    margin-right: clamp(0.5rem, 4vw, 5rem);
+    margin-left: clamp(3rem, 2vw, 3rem);
 }
+
+.second-section-image {
+    width: clamp(10rem, 34vw, 31rem);
+    height: clamp(10rem, 34vw, 31rem);
+}
+
+.second-section-text-div-containers {
+    display: flex;
+}
+
+.second-section-text-div-containers-num-p {
+    color: #fff;
+    font-size: clamp(1rem, 3.5vw, 4rem);
+
+}
+
+.second-section-text-div-containers-text-p {
+    margin-top: 0.7rem;
+    color: var(--general-background);
+    font-size: clamp(0.2rem, 1vw, 1rem);
+}
+
+.second-section-text-div-containers-divs {
+    max-width: 10rem;
+    margin-right: clamp(2rem, 4vw, 7rem);
+}
+
+@media (max-width: 760px) {
+
+    .second-section {
+        background-color: #14213D;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .second-section-div {
+        flex-direction: column;
+        align-content: center;
+        justify-content: space-between;
+    }
+
+    .second-section-text-div {
+        max-width: 50rem;
+        margin: 0;
+    }
+
+    
+    .second-section-text-div-divider {
+        background-color: #fff;
+        height: clamp(0.2rem, 0.6vw, 1rem);
+        width: clamp(0.8rem, 7vw, 8rem);
+        margin-bottom: clamp(0.5rem, 4vw, 4rem);
+    }
+    
+    .second-section-text-div-first-p {
+        font-size: clamp(1rem, 3vw, 4rem);
+        color: #fff;
+        font-weight: 500;
+        margin-bottom: clamp(0.5rem, 4vw, 4rem);
+    }
+    
+    .second-section-text-div-second-p {
+        font-family: RobotoMedium;
+        font-size: clamp(0.2rem, 1vw, 1rem);
+        color: var(--general-background);
+        font-weight: 300;
+        margin-bottom: clamp(0.5rem, 4vw, 4rem);
+    
+    }
+    
+    .second-section-image {
+        width: clamp(14rem, 60vw, 60rem);
+        height: clamp(14rem, 60vw, 60rem);
+        margin: 0;
+    }
+
+    .second-section-image-div {
+        margin-right: 0;
+        margin-left: 0;     
+    }
+    
+    
+    .second-section-text-div-containers {
+        display: flex;
+    }
+    
+    .second-section-text-div-containers-num-p {
+        color: #fff;
+        font-size: clamp(1rem, 3.5vw, 4rem);
+    
+    }
+    
+    .second-section-text-div-containers-text-p {
+        margin-top: 0.7rem;
+        color: var(--general-background);
+        font-size: clamp(0.2rem, 1vw, 1rem);
+    }
+    
+    .second-section-text-div-containers-divs {
+        max-width: 10rem;
+    }
+}
+@media (1600px < width <= 6000px) {
+
+    .second-section-text-div {
+        margin-top: 3rem;
+    }
+
+    .second-section-text-div-second-p {
+        margin-bottom: 2.5rem;
+    }
+    
+    .second-section-text-div-first-p {
+        margin-bottom: 2.5rem;
+    }
+
+    .second-section-text-div-divider {
+        margin-bottom: 2.5rem;
+    }
+    
+    .second-section {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+
+    .second-section-image-div {
+        margin-left: 10rem;
+    }
+
+    .second-section-text-div-divider {
+        height: 0.5rem;
+        width: 6rem;
+    }
+
+}
+

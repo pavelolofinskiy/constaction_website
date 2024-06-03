@@ -1,6 +1,4 @@
-.my-main {
-    padding-bottom: 10vh;
-}
+
 
 
 @media (max-width: 507px) {
@@ -10,7 +8,7 @@
     }
 
     .hero-section-div {
-        min-block-size: 85vh;
+        min-block-size: 75vh;
         background:url(../img/hero-section-imagee.png);
         background-size: cover;
         background-repeat: no-repeat;
@@ -35,7 +33,7 @@
     .hero-section-div-p {
         color: var(--text-color);
         font-weight: 900;
-        font-size:  14vw;
+        font-size:  12vw;
         text-align: left;
         margin-left: 1rem;
         margin-top: 5rem;
@@ -45,7 +43,7 @@
         margin-top: 0.9rem; 
         text-align: start;
         color: var(--text-color);
-        font-size: 0.8rem;
+        font-size: clamp(0.4rem, 2.5vw, 50rem);
         font-family: RobotoMedium;
         margin-left: 1.1rem;
         padding-right: 2rem;
@@ -60,7 +58,7 @@
     }
 
     .hero-section-div-p-third {
-        font-size: 0.7rem;
+        font-size: clamp(0.4rem, 2.5vw, 50rem);
         margin-top: 1.5rem; 
         font-family: RobotoMedium;
     }
@@ -74,7 +72,7 @@
         background-color: var(--second-color);
         color: rgb(255, 255, 255);
         font-family: MyNunito, sans-serif;
-        font-size: 0.7rem;
+        font-size: clamp(0.6rem, 2.5vw, 50rem);
         font-weight: 700;
         font-style: normal;
         padding: 0.7rem 1.2rem;
@@ -86,7 +84,7 @@
         background-color: var(--general-background);
         color: var(--text-color);
         font-family: MyNunito, sans-serif;
-        font-size: 0.7rem;
+        font-size: clamp(0.6rem, 2.5vw, 50rem);
         font-weight: 700;
         font-style: normal;
         padding: 0.6rem 1.0rem;
@@ -225,8 +223,11 @@
 
 @media (760px < width <= 1023px) {
 
-    .hero-section-div {
-        min-block-size: 90vh;
+    .my-main {
+        padding-bottom: 10vh;
+    }
+
+    .hero-section-div { 
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -347,7 +348,8 @@
 
 @media (1023px < width <= 6000px) {
 
-    .hero-section-div {
+    .my-main {
+        padding-bottom: 10vh;
     }
 
     .hero-section-div-elements {
