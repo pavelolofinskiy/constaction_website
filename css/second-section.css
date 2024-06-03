@@ -41,7 +41,7 @@
 
 .second-section-image-div {
     margin-right: clamp(0.5rem, 4vw, 5rem);
-    margin-left: clamp(3rem, 2vw, 3rem);
+    margin-left: 4.5vw;
 }
 
 .second-section-image {
@@ -117,14 +117,15 @@
     }
     
     .second-section-image {
-        width: clamp(14rem, 60vw, 60rem);
-        height: clamp(14rem, 60vw, 60rem);
+        width: clamp(14rem, 80vw, 60rem);
+        height: clamp(14rem, 80vw, 60rem);
         margin: 0;
     }
 
     .second-section-image-div {
         margin-right: 0;
         margin-left: 0;     
+        margin-bottom: 2vh;
     }
     
     

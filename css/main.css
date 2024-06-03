@@ -242,3 +242,9 @@ text-decoration: none;
     }
 }
 
+.myscript-div {
+    background-color: black;
+    width: 10rem;
+    height: 10rem;
+    display: none;
+}
