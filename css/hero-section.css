@@ -222,7 +222,7 @@
     }
 }
 
-@media (760px < width <= 1023px) {
+@media (760px < width <= 1023px), (orientation: landscape) {
 
     .my-main {
         padding-bottom: 10vh;
