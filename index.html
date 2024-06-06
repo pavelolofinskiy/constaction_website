@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="css\main.css?version=5">
     <link rel="stylesheet" href="css\hero-section.css?version=5">
     <link rel="stylesheet" href="css\second-section.css?version=5">
+    <link rel="stylesheet" href="css\third-section.css?version=5">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UrbanRise</title>
@@ -21,6 +22,11 @@
             <a class="nav-menu" href="about.php">About</a>
             <a class="nav-menu" href="contact.php">Contact</a>
         </nav>
+
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
 </header>
 
 
@@ -48,7 +54,7 @@
 
 <div id="script-div" class="myscript-div"></div>
 
-<section class="second-section">
+<section id='about' class="second-section">
     <div class="second-section-div">
         <div class="second-section-image-div">
             <img class='second-section-image' src="img\second-section-image.png">
@@ -80,7 +86,83 @@
     </div>
 </section>
 
-
-<script src="javascript/script.js"></script>
-</body>
-</html>
+<section id="servises" class="third-section overlay2">
+    <div class="grid-div">
+        <div class="grid-inner-first-div">
+            <div></div>
+            <p class="grid-div-first-p">Recent Projects</p>
+        </div>
+        <div class="grid-inner-div">
+                <div class="grid-inner-div-div">
+                    <img class="grid-div-img" src="img\first-project.jpg">
+                    <div class="grid-inner-div-content">
+                    <div>
+                        <p class="grid-div-p">Lincoln High School</p>
+                        <p id='first-p'class="grid-div-second-p">We, in partnership with Pacificmark Construction, built a six-story, 292,000 SF high school for Portland Public Schools, featuring specialized classrooms, a 500-seat auditorium, athletic facilities, and sustainability features, ensuring student safety during construction on the existing campus.</p>
+                    </div>
+                    <div class="grid-inner-div-data">
+                        <p id="data-first" class="grid-div-data-p">Buiding &nbsp;&nbsp;&nbsp;&nbsp; July 12</p>
+                        <div class="grid-div-button-div">
+                            <a class="grid-div-button">></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-inner-div">
+            <div class="grid-inner-div-div">
+                <img class="grid-div-img" src="img\second-project.jpg">
+                <div class="grid-inner-div-content">
+                    <div>
+                        <p class="grid-div-p">Wild Ginger Restaurant</p>
+                        <p id='second-p' class="grid-div-second-p">In Seattle's bustling South Lake Union, the latest addition to the Wild Ginger family resides at McKenzie Seattle, constructed specially  by us. Seating 150 guests, it offers an intimate dining experience with high-end finishes, executed flawlessly within the tight five-month construction schedule.</p>
+                    </div>
+                    <div class="grid-inner-div-data">
+                        <p id="data-second" class="grid-div-data-p">Interior &nbsp;&nbsp;&nbsp;&nbsp; August 19</p>
+                        <div class="grid-div-button-div">
+                            <a class="grid-div-button">></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-inner-div">
+            <div class="grid-inner-div-div">
+                <img class="grid-div-img" src="img\third-project.jpg">
+                <div class="grid-inner-div-content">
+                <div>
+                    <p class="grid-div-p">Founders Hall</p>
+                <p id='third-p' class="grid-div-second-p">In partnership with the University of Washington and LMN Architects, we led the expansion of the Foster School of Business with Founders Hall. Spanning 85,500 square feet, the facility enhances academic resources, campus dynamics, and flexibility for evolving requirements.</p>
+                </div>
+                
+                <div class="grid-inner-div-data">
+                    <p id="data-third" class="grid-div-data-p">Buiding &nbsp;&nbsp;&nbsp;&nbsp; May 28</p>
+                    <div class="grid-div-button-div">
+                        <a class="grid-div-button">></a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="grid-inner-div-fourth">
+            <div class="grid-inner-div-div">
+                <img class="grid-div-img" src="img\fourth-project.jpg ">
+            <div class="grid-inner-div-content">
+                <div>
+                    <p class="grid-div-p">Public Works Facility</p>
+                <p class="grid-div-second-p">We spearheaded the construction of Hillsboro's new Public Works Facility, a vital hub for transportation, sewer, and stormwater systems. With a 25,000 SF operations center, a 9,000 SF maintenance shop, and extensive storage, the project was completed in phases to minimize disruptions and environmental impact.</p>
+                </div>
+                <div class="grid-inner-div-data">
+                    <p class="grid-div-data-p">Buiding &nbsp;&nbsp;&nbsp;&nbsp; October 12</p>
+                    <div class="grid-div-button-div">
+                        <a class="grid-div-button">></a>
+                    </div>
+                </div>
+            </div>
+            
+            </div>
+            
+        </div>
+    </div>
+</section>
+<script src="javascript\script.js"></script>

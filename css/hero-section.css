@@ -399,7 +399,7 @@
         font-weight: 400;
         text-align: start;
         color: var(--text-color);
-        font-size: clamp(1rem, 1vw, 3rem);
+        font-size: 0.8;
         display: none;
     }
 
