@@ -21,8 +21,11 @@ function changeSecondText () {
     var targetedText5 = document.getElementById('data-second')
     var targetedText6 = document.getElementById('data-third')
     if (window.matchMedia("(max-width: 400px)" || "(760px < width <= 1060px)").matches) {
+        targetedText4.style.marginBottom = '1rem';
         targetedText4.innerHTML = "Buiding <br> July 12";
+        targetedText5.style.marginBottom = '1rem';
         targetedText5.innerHTML = "Interior <br> August 19";
+        targetedText6.style.marginBottom = '1rem';
         targetedText6.innerHTML = "Buiding <br> May 28"
     } else { 
         targetedText4.innerHTML = "Buiding &nbsp;&nbsp;&nbsp;&nbsp; July 12";
