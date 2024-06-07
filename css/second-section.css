@@ -9,12 +9,13 @@
 
 .second-section-div {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .second-section-text-div {
     max-width: 50rem;
     margin-top: clamp(1rem, 4vw, 7rem);
+    margin-right: clamp(0.5rem, 8vw, 10rem);
     margin-left: clamp(1rem, 4vw, 7rem);
 }
 
@@ -45,7 +46,7 @@
 .second-section-image-div {
     margin-top: 0;
     margin-right: clamp(0.5rem, 4vw, 5rem);
-    margin-left: 4.5vw;
+    margin-left: clamp(0.5rem, 8vw, 10rem)
 }
 
 .second-section-image {
@@ -180,11 +181,12 @@
     }
 
     .second-section-div {
-        margin-right: 4rem;
+        margin: 0;
+        justify-content: center;
     }
 
     .second-section-image-div {
-        margin-left: 10rem;
+        margin-left: clamp(2rem, 6vw, 20rem);
         margin-top: 0;
     }
 

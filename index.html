@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="css\reset.css?version=445">
-    <link rel="stylesheet" href="css\main.css?version=4444">
-    <link rel="stylesheet" href="css\hero-section.css?version=44445">
-    <link rel="stylesheet" href="css\second-section.css?version=54444">
-    <link rel="stylesheet" href="css\third-section.css?version=44445">
+    <link rel="stylesheet" href="css\reset.css?version=4321445">
+    <link rel="stylesheet" href="css\main.css?version=4431244">
+    <link rel="stylesheet" href="css\hero-section.css?version=4432134445">
+    <link rel="stylesheet" href="css\second-section.css?version=541243444">
+    <link rel="stylesheet" href="css\third-section.css?version=443412445">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UrbanRise</title>
@@ -14,19 +14,18 @@
 
 <header class="my-header">
         <h1 class="my-logo-div-p">Urban<span class="my-logo-div-span">Rise</span></h1>
-
+        <input class="head-checkbox" type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
         <nav class="my-header-nav">
             <a class="nav-menu" href="index.html">Home</a>
             <a class="nav-menu" href="about.php">Solutions</a>
-            <a class="nav-menu" href="about.php">Cases</a>
+            <a class="nav-menu" href="about.php">Projects</a>
             <a class="nav-menu" href="about.php">About</a>
             <a class="nav-menu" href="contact.php">Contact</a>
         </nav>
 
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
-        </label>
 </header>
 
 
@@ -41,8 +40,8 @@
             <p class="hero-section-div-p-tablet">Your Ideas & Dreams Are Transformed By Us Into Long-<br>Lasting, Engineered Buildings</p>
             <p class="hero-section-div-p-notebooks">Your Ideas & Dreams Are Transformed By Us Into<br> Long-Lasting, Engineered Buildings</p>
             <div class="hero-section-div-button-container">
-            <a class="hero-section-div-button">Contact Us</a>
-            <a class="hero-section-div-button2">Free Consultation</a>
+            <button href="contact.php" class="hero-section-div-button">Contact Us</button>
+            <button href="contact.php" class="hero-section-div-button2">Free Consultation</button>
             <p class="hero-section-div-p-third"><span>*</span> All Our Projects Are Curated By Experts</p>
             </div>
         </div>
@@ -90,7 +89,10 @@
     <div class="grid-div">
         <div class="grid-inner-first-div">
             <div></div>
+            <div class="third-section-text-div-divider">
+            </div>
             <p class="grid-div-first-p">Recent Projects</p>
+            <p class="grid-div-third-p">Recent Projects Showcasting Our Craftsmanship And Inovation In Construction</p>
         </div>
         <div class="grid-inner-div">
                 <div class="grid-inner-div-div">
@@ -103,7 +105,7 @@
                     <div class="grid-inner-div-data">
                         <p id="data-first" class="grid-div-data-p">Buiding &nbsp;&nbsp;&nbsp;&nbsp; July 12</p>
                         <div class="grid-div-button-div">
-                            <a class="grid-div-button">></a>
+                            <button onclick="location.href='first_project.html'" id="shrink-button" class="grid-div-button">></button>
                         </div>
                     </div>
                 </div>
@@ -118,9 +120,9 @@
                         <p id='second-p' class="grid-div-second-p">In Seattle's bustling South Lake Union, the latest addition to the Wild Ginger family resides at McKenzie Seattle, constructed specially  by us. Seating 150 guests, it offers an intimate dining experience with high-end finishes, executed flawlessly within the tight five-month construction schedule.</p>
                     </div>
                     <div class="grid-inner-div-data">
-                        <p id="data-second" class="grid-div-data-p">Interior &nbsp;&nbsp;&nbsp;&nbsp; August 19</p>
+                        <p id="data-second" class="grid-div-data-p">Interior &nbsp;&nbsp;&nbsp;&nbsp; April 19</p>
                         <div class="grid-div-button-div">
-                            <a class="grid-div-button">></a>
+                            <button onclick="location.href='first_project.html'" id="shrink-button" class="grid-div-button">></button>
                         </div>
                     </div>
                 </div>
@@ -138,7 +140,7 @@
                 <div class="grid-inner-div-data">
                     <p id="data-third" class="grid-div-data-p">Buiding &nbsp;&nbsp;&nbsp;&nbsp; May 28</p>
                     <div class="grid-div-button-div">
-                        <a class="grid-div-button">></a>
+                        <button onclick="location.href='first_project.html'" id="shrink-button" class="grid-div-button">></a>
                     </div>
                 </div>
             </div>
@@ -153,9 +155,9 @@
                 <p class="grid-div-second-p">We spearheaded the construction of Hillsboro's new Public Works Facility, a vital hub for transportation, sewer, and stormwater systems. With a 25,000 SF operations center, a 9,000 SF maintenance shop, and extensive storage, the project was completed in phases to minimize disruptions and environmental impact.</p>
                 </div>
                 <div class="grid-inner-div-data">
-                    <p class="grid-div-data-p">Buiding &nbsp;&nbsp;&nbsp;&nbsp; October 12</p>
+                    <p class="grid-div-data-p">Buiding &nbsp;&nbsp;&nbsp;&nbsp; June 12</p>
                     <div class="grid-div-button-div">
-                        <a class="grid-div-button">></a>
+                        <button onclick="location.href='first_project.html'" id="shrink-button" class="grid-div-button">></a>
                     </div>
                 </div>
             </div>
@@ -165,4 +167,8 @@
         </div>
     </div>
 </section>
-<script src="javascript\script.js"></script>
+
+<section>
+
+
+</section>

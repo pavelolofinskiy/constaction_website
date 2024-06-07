@@ -7,6 +7,13 @@
     background-position-y: center;
 }
 
+.third-section-text-div-divider {
+    background-color: var(--second-color);
+    height: clamp(0.2rem, 0.6vw, 1rem);
+    width: clamp(0.8rem, 7vw, 8rem);
+    margin-bottom: clamp(0.5rem, 2vw, 4rem);
+    margin-top: 0;
+}
 .overlay2 {
     border-image-source: linear-gradient(#ffffffa4, #beb4b4a4);
     border-image-slice: fill 1;
@@ -15,12 +22,12 @@
 .grid-div {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 5rem;
+    padding: clamp(1rem, 8vw, 7.5rem);
     gap: 3vw;  
 }
 
 .grid-div-first-p {
-    font-size: 3rem;
+    font-size: clamp(2rem, 3vw, 4rem);
 }
 
 .grid-inner-div {
@@ -74,11 +81,19 @@
 }
 
 .grid-div-second-p {
-    margin-top: clamp(1rem, 1.5vw, 1.5rem);
+    margin-top: clamp(0.2rem, 1vw, 1.5rem);
     color: #3c3c3a;
     font-size: clamp(0.4rem, 1vw, 2rem);
     padding-right: 1.5rem;
 }
+
+.grid-div-third-p {
+    margin-top: clamp(0.2rem, 1vw, 1.5rem);
+    color: #3c3c3a;
+    font-size: clamp(0.4rem, 1.3vw, 2rem);
+    padding-right: 1.5rem;
+}
+
 
 .grid-inner-div-data {
     display: grid;
@@ -88,7 +103,7 @@
 }
 
 .grid-div-data-p {
-    font-size: clamp(0.5rem, 1.5vw, 1.3rem);
+    font-size: clamp(0.2rem, 1.2vw, 1.3rem);
     color: #3c3c3a;
 }
 
@@ -97,8 +112,6 @@
 }
 
 .grid-div-button {
-    height: auto;
-    box-sizing: border-box;
     background-color: transparent;
     color: var(--second-color);
     font-family: RobotoMedium, sans-serif;
@@ -106,10 +119,36 @@
     border: 2px solid;
     border-radius: 4px;
     padding: clamp(0.1rem, 0.2vw, 1rem) clamp(1rem, 2vw, 2rem);  
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    outline: none;
+    text-decoration: none;
+}
+
+.grid-div-button:hover {
+    transform: scale(0.92);
 }
 
 
 @media (max-width: 768px) {
+
+    .third-section-text-div-divider {
+        height: clamp(0.2rem, 1.2vw, 1rem);
+        width: clamp(3rem, 10vw, 8rem);
+        margin-bottom: clamp(0.5rem, 3vw, 4rem);
+        margin-top: 3vh;
+    }
+
+    .grid-div-first-p {
+        font-size: 5vw
+    }
+
+    .grid-div-third-p {
+        margin-top: clamp(0.2rem, 2vw, 1.5rem);
+        color: #3c3c3a;
+        font-size: 2vw
+
+    }
     .grid-inner-first-div {
         grid-area: 1 / 1;
         
@@ -173,5 +212,107 @@
         border: 2px solid;
         border-radius: 4px;
         padding: clamp(0.1rem, 0.2vw, 0.8rem) clamp(0.8rem, 3vw, 2rem);  
+        text-decoration: none;
     }
+}
+
+@media (1600px < width <= 6000px) {
+    .grid-div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 5rem;
+        gap: 3vw;  
+    }
+    
+    .grid-div-first-p {
+        font-size: clamp(2rem, 3vw, 4rem);
+    }
+    
+    .grid-inner-div {
+        display: flex;
+        justify-content: space-between;
+        background-color: #f4f2ef;
+        border-radius: 10px;
+    
+    }
+    
+    .grid-inner-div-fourth {
+        display: flex;
+        justify-content: space-between;
+        background-color: #f4f2ef;
+    
+    }
+    
+    .grid-inner-first-div {
+        grid-area: 1 / 1 / 2 / 3;
+    }
+    
+    .grid-inner-div-div {
+        display: flex;
+    }
+    
+    .grid-inner-div-date {
+        display: flex;
+    }
+    
+    .grid-inner-div-date-container {
+        align-content: center;
+    }
+    
+    .grid-inner-div-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .grid-div-img {
+        border-radius: 4px;
+        width: clamp(8rem, 15vw, 20rem);
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        margin: clamp(1rem, 2vh, 1.5rem);
+    }
+    
+    .grid-div-p {
+        margin-top: clamp(1rem, 2vw, 1.5rem);
+        font-size: clamp(0.5rem, 1.5vw, 3rem);
+    }
+    
+    .grid-div-second-p {
+        margin-top: clamp(1rem, 1.5vw, 1.5rem);
+        color: #3c3c3a;
+        font-size: clamp(0.4rem, 1vw, 2rem);
+        padding-right: 1.5rem;
+    }
+    
+    .grid-inner-div-data {
+        display: grid;
+        grid-template-columns: 3fr 1fr 0.4fr;
+        justify-content: space-between;
+    
+    }
+    
+    .grid-div-data-p {
+        font-size: clamp(0.5rem, 1.5vw, 1.3rem);
+        color: #3c3c3a;
+    }
+    
+    .grid-div-button-div {
+        margin-bottom: clamp(1rem, 2vh, 1.5rem);
+    }
+    
+    .grid-div-button {
+        height: auto;
+        box-sizing: border-box;
+        background-color: transparent;
+        color: var(--second-color);
+        font-family: RobotoMedium, sans-serif;
+        font-size: clamp(1rem, 1.5vw, 2rem);
+        border: 2px solid;
+        border-radius: 4px;
+        padding: clamp(0.1rem, 0.2vw, 1rem) clamp(1rem, 2vw, 2rem);  
+        text-decoration: none;
+    }
+
+    
 }

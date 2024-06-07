@@ -18,8 +18,8 @@
 
 body {
     background-color: var(--general-background);
-    display: flex;
-    flex-direction: column-reverse; 
+    /* display: flex;
+    flex-direction: column-reverse;  */
 }
 
 p {
@@ -98,7 +98,6 @@ text-decoration: none;
     }
 
     .my-header-nav {
-        margin-right: 3rem;
         display: none;
     }
 
@@ -164,6 +163,10 @@ text-decoration: none;
         margin-right: 3rem;
     }
 
+    .head-checkbox {
+        display: none;
+    }
+
     .nav-menu {
 
         font-size: 1rem;
@@ -171,7 +174,7 @@ text-decoration: none;
     }
 
     .my-logo-div-p{
-        margin-left: 8vw;
+        margin-left: 5.6vw;
         font-family: Roboto;
 
     }
@@ -183,6 +186,9 @@ text-decoration: none;
 
 @media (1023px < width <= 1600px) {
     
+    .head-checkbox {
+        display: none;
+    }
 
     .my-header {
         background-color: transparent;
@@ -193,7 +199,7 @@ text-decoration: none;
     }
 
     .my-header-nav {
-        margin-right: 6rem;
+        margin-right: clamp(0.1rem, 10vw, 15rem);
     }
 
     .nav-menu {
@@ -214,6 +220,10 @@ text-decoration: none;
 
 
 @media (1600px < width <= 6000px) {
+
+    .head-checkbox {
+        display: none;
+    }
     
     .my-header {
         background-color: transparent;
@@ -224,7 +234,7 @@ text-decoration: none;
     }
 
     .my-header-nav {
-        margin-left: clamp(5rem, 18vw, 28rem);
+        margin-left: 19rem;
     }
 
     .nav-menu {
@@ -234,7 +244,7 @@ text-decoration: none;
     }
 
     .my-logo-div-p{
-        margin-right: 18rem;
+        margin-right: 19rem;
         font-family: Roboto;
 
     }
@@ -244,9 +254,3 @@ text-decoration: none;
     }
 }
 
-.myscript-div {
-    background-color: black;
-    width: 10rem;
-    height: 10rem;
-    display: none;
-}

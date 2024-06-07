@@ -15,5 +15,3 @@ function changeText () {
 
 window.addEventListener("resize", changeText);
 changeText();
-
-
