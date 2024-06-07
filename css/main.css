@@ -18,8 +18,8 @@
 
 body {
     background-color: var(--general-background);
-    /* display: flex;
-    flex-direction: column-reverse;  */
+    display: flex;
+    flex-direction: column-reverse;  
 }
 
 p {
@@ -40,8 +40,12 @@ p {
     margin-left: 2.8rem;
     font-size: 1.25rem;
     color: var(--text-color);
+    transition: all 0.2s;
 }
 
+.nav-menu:hover {
+    color: #f0a500;
+}
 
 .nav-menu:link {
     text-decoration: none;
