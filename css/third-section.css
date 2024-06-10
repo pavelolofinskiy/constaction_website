@@ -14,6 +14,7 @@
     margin-bottom: clamp(0.5rem, 2vw, 4rem);
     margin-top: 0;
 }
+
 .overlay2 {
     border-image-source: linear-gradient(#ffffffa4, #beb4b4a4);
     border-image-slice: fill 1;
@@ -55,6 +56,12 @@
 
 .grid-div-first-p {
     font-size: clamp(2rem, 3vw, 4rem);
+}
+
+.grid-div-third-p {
+    font-size: clamp(0.8rem, 1.6vw, 1.6rem);
+    margin-top: clamp(0.5rem, 3vh, 2rem);
+    color: #3c3c3a;
 }
 
 .grid-inner-div-fourth {
@@ -102,7 +109,29 @@
 
 @media (460px < width <= 1023px) {
 
-    
+    .grid-div-third-p {
+        font-size: clamp(0.8rem, 1.8vw, 1.6rem);
+        margin-top: clamp(0.5rem, 2vh, 2rem);
+    }
+
+    .grid-div > :nth-child(5) {
+        display: none; 
+    }
+
+    .grid-div > :nth-child(6) {
+        display: none; 
+    }
+
+
+    .third-section-text-div-divider {
+        height: clamp(0.3rem, 0.9vw, 1rem);
+        width: clamp(4rem, 9vw, 10rem);
+        margin-bottom: clamp(1rem, 1.7vh, 5rem);
+    }
+
+    .grid-inner-first-div {
+        grid-area: 1 / 1 / 2 / 3;
+    }
 
     .grid-div-p {
         font-size: clamp(0.5rem, 2.5vw, 3rem);
@@ -125,6 +154,34 @@
 }
 
 @media (max-width: 460px) {
+
+    .grid-div > :nth-child(4) {
+        display: none; 
+    }
+
+    .grid-div > :nth-child(5) {
+        display: none; 
+    }
+
+    .grid-div > :nth-child(6) {
+        display: none; 
+    }
+
+    .grid-div-third-p {
+        font-size: clamp(0.8rem, 1.8vw, 1.6rem);
+        margin-top: clamp(0.5rem, 1.2vh, 2rem);
+        color: #3c3c3a;
+    }
+
+    .third-section-text-div-divider {
+        height: clamp(0.4rem, 0.9vw, 1rem);
+        width: clamp(4rem, 9vw, 10rem);
+        margin-bottom: clamp(1rem, 1.7vh, 5rem);
+    }
+
+    .grid-inner-first-div {
+        grid-area: 1 / 1 / 2 / 2;
+    }
 
     .grid-div {
         grid-template-columns: repeat(1, 1fr);
