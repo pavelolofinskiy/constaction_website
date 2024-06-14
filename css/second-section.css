@@ -13,10 +13,8 @@
 }
 
 .second-section-text-div {
-    max-width: 50rem;
-    margin-top: clamp(1rem, 4vw, 7rem);
-    margin-right: clamp(0.5rem, 8vw, 10rem);
-    margin-left: clamp(1rem, 4vw, 7rem);
+    margin-top: clamp(1rem, 4vh, 8rem);
+    margin-right: 5.8vw;
 }
 
 .second-section-text-div-divider {
@@ -28,7 +26,7 @@
 }
 
 .second-section-text-div-first-p {
-    font-size: clamp(1rem, 3vw, 4rem);
+    font-size: clamp(1rem, 4vw, 4rem);
     color: #fff;
     font-weight: 500;
     margin-bottom: clamp(0.5rem, 3vw, 4rem);
@@ -45,13 +43,12 @@
 
 .second-section-image-div {
     margin-top: 0;
-    margin-right: clamp(0.5rem, 4vw, 5rem);
-    margin-left: clamp(0.5rem, 8vw, 10rem)
+    margin-left: 5.3vw;
 }
 
 .second-section-image {
-    width: clamp(10rem, 34vw, 31rem);
-    height: clamp(10rem, 34vw, 31rem);
+    width: clamp(10rem, 38vw, 31rem);
+    height: clamp(10rem, 38vw, 31rem);
 }
 
 .second-section-text-div-containers {
@@ -60,7 +57,7 @@
 
 .second-section-text-div-containers-num-p {
     color: #fff;
-    font-size: clamp(1rem, 3.5vw, 4rem);
+    font-size: clamp(1rem, 4vw, 4rem);
 
 }
 
@@ -72,7 +69,12 @@
 
 .second-section-text-div-containers-divs {
     max-width: 10rem;
-    margin-right: clamp(2rem, 4vw, 7rem);
+    margin-right: clamp(2rem, 7vw, 7rem);
+}
+
+.second-section-text-div-containers-divs1 {
+    max-width: 10rem;
+    margin-right: 0;
 }
 
 .second-section-text-div-second-p-mobile {
@@ -124,8 +126,10 @@
     .second-section-image {
         width: clamp(14rem, 80vw, 60rem);
         height: clamp(14rem, 80vw, 60rem);
+        margin-left: 4.7vw;
         margin: 0;
     }
+    
 
     .second-section-image-div {
         margin-right: 0;
@@ -153,13 +157,42 @@
 }
 
 
-@media (1600px < width <= 6000px) {
+@media (1200px < width <= 6000px) {
+    .second-section {
+        display: flex;
+        justify-content: center;
+        height: 30rem;
+    }
 
-
-    
+    .second-section-div {
+        margin: 0;
+    }
     
     .second-section-text-div {
         margin-top: 3rem;
+        padding: 0;
+        margin-right: 0;
+        margin-left: 7.3rem;
+    }
+
+    .second-section-image-div {
+        margin-top: 0;
+        margin: 0;
+    }
+
+
+    .second-section-text-div-containers-num-p {
+        color: #fff;
+        font-size: 3rem;
+    }
+
+    .second-section-text-div-containers-text-p {
+        margin-top: 0.7rem;
+        font-size: 0.9rem;
+    }
+
+    .second-section-text-div-containers-divs {
+        margin-right: 4.7rem;
     }
 
     .second-section-text-div-second-p {
@@ -168,6 +201,9 @@
     
     .second-section-text-div-first-p {
         margin-bottom: 2.5rem;
+        font-size: 3rem;
+        color: #fff;
+        font-weight: 500;
     }
 
     .second-section-text-div-divider {
@@ -180,14 +216,10 @@
         padding-bottom: 6rem;
     }
 
-    .second-section-div {
-        margin: 0;
-        justify-content: center;
-    }
 
-    .second-section-image-div {
-        margin-left: clamp(2rem, 6vw, 20rem);
-        margin-top: 0;
+    .second-section-image {
+        width: 29rem;
+        height: 29rem;
     }
 
     .second-section-text-div-divider {

@@ -5,6 +5,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: center;
+    padding-bottom: 5rem;
 }
 
 .third-section-text-div-divider {
@@ -12,7 +13,7 @@
     height: clamp(0.2rem, 0.6vw, 1rem);
     width: clamp(0.8rem, 7vw, 8rem);
     margin-bottom: clamp(0.5rem, 2vw, 4rem);
-    margin-top: 0;
+    margin-top: 5rem;
 }
 
 .overlay2 {
@@ -20,22 +21,32 @@
     border-image-slice: fill 1;
 }
 
-.grid-div {
+.container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding: clamp(1rem, 10vw, 15rem);
-    gap: 4vw;  
-    justify-content: center ;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 25px;
+    margin: 0 auto; 
+    max-width: 1108px; 
+    padding: 0 20px; 
 }
 
+.item {
+    background: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; 
+}
+
+.item1 {
+    grid-area: 1 / 1 / 2 / 4;
+}
 
 .grid-inner-div {
     background-color: #f4f2ef;
+    box-sizing: border-box;
 }
 
 .grid-div-place-p {
-    margin-left: clamp(1rem, 2vw, 1.5rem);
-    margin-top: clamp(1rem, 1.5vh, 1.5rem);
     font-size: clamp(0.2rem, 1vw, 1.3rem);
     color: #3c3c3a;
 }
@@ -43,12 +54,9 @@
 .grid-date-div {
     display: flex;
     justify-content: space-between;
-    margin-top: clamp(1rem, 2.5vh, 1.5rem);
-    margin-bottom: clamp(1rem, 2vw, 1.5rem);
 }   
 
 .grid-div-data-p {
-    margin-left: clamp(1rem, 2vw, 1.5rem);
     margin-top: 0.5rem;
     font-size: clamp(0.2rem, 1.2vw, 1.3rem);
     color: #3c3c3a;
@@ -82,7 +90,6 @@
 
 .grid-div-p {
     margin-top: clamp(1rem, 2vw, 1.5rem);
-    margin-left: clamp(1rem, 2vw, 1.5rem);
     font-size: clamp(0.5rem, 1.8vw, 3rem);
 }
 
@@ -99,15 +106,71 @@
     outline: none;
     text-decoration: none;
     display: inline-block;
-    margin-right: clamp(1rem, 2vw, 1.5rem);
+    margin-right: 0;
 }
 
 .grid-div-button:hover {
     transform: scale(0.92);
 }
 
+@media (max-width: 1200px) {
+    .container {
+        padding: 0 5.4vw;
+    }
 
-@media (460px < width <= 1023px) {
+    .item1 {
+        grid-area: 1 / 1 / 2 / 4;
+    }
+}
+
+@media (max-width: 900px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr); 
+        padding: 0 50px; 
+    }
+
+    .item1 {
+        grid-area: 1 / 1 / 2 / 3;
+    }
+}
+
+@media (max-width: 760px) {
+    .container {
+        grid-template-columns: 1fr; 
+        padding: 0 10vw; 
+    }
+
+    .item {
+        padding: 20px;
+    }
+
+    .item1 {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+}
+
+@media (1200px < width <= 6000px) {
+    .grid-div-p {
+        font-size: 1.7rem;
+    }
+
+    .grid-div-data-p {
+        margin-top: 1rem;
+        font-size: 1.05rem;
+    }
+
+    .grid-div-place-p {
+        margin-top: 1.5rem;
+        font-size: 1rem;
+    }
+
+    .grid-div-button {
+        padding: 0.5rem, 0.8rem;  
+        font-size: 1.5rem;
+    }
+}
+
+@media (900px < width <= 1200px) {
 
     .grid-div-third-p {
         font-size: clamp(0.8rem, 1.8vw, 1.6rem);
@@ -134,7 +197,7 @@
     }
 
     .grid-div-p {
-        font-size: clamp(0.5rem, 2.5vw, 3rem);
+        font-size: clamp(0.5rem, 2.08vw, 3rem);
         gap: 4vw;  
     }
 
@@ -143,17 +206,73 @@
     }
 
     .grid-div-place-p {
-        font-size: clamp(0.6rem, 1.5vw, 1.3rem);
+        font-size: clamp(0.6rem, 1.3vw, 1.3rem);
+        margin-top: clamp(1rem, 1.7vh, 5rem);
     }
 
     .grid-div-data-p {
-        margin-left: clamp(1rem, 2vw, 1.5rem);
+        margin-top: clamp(1rem, 1.7vh, 5rem);
         font-size: clamp(0.6rem, 1.5vw, 1.3rem);
+    }
+
+    .grid-div-button {
+        margin-top: clamp(0.3rem, 1vh, 2rem);
     }
     
 }
 
-@media (max-width: 460px) {
+@media (max-width: 900px) {
+    .grid-div-third-p {
+        font-size: clamp(0.8rem, 1.8vw, 1.6rem);
+        margin-top: clamp(0.5rem, 2vh, 2rem);
+    }
+
+    .grid-div > :nth-child(5) {
+        display: none; 
+    }
+
+    .grid-div > :nth-child(6) {
+        display: none; 
+    }
+
+
+    .third-section-text-div-divider {
+        height: clamp(0.3rem, 0.9vw, 1rem);
+        width: clamp(4rem, 9vw, 10rem);
+        margin-bottom: clamp(1rem, 1.7vh, 5rem);
+    }
+
+    .grid-inner-first-div {
+        grid-area: 1 / 1 / 2 / 3;
+    }
+
+    .grid-div-p {
+        font-size: clamp(0.5rem, 3vw, 3rem);
+        gap: 4vw;  
+    }
+
+    .grid-div {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-div-place-p {
+        font-size: clamp(0.6rem, 2vw, 1.3rem);
+        margin-top: clamp(1rem, 2vh, 5rem);
+    }
+
+    .grid-div-data-p {
+        margin-top: clamp(1rem, 2.4vh, 5rem);
+        font-size: clamp(0.6rem, 1.8vw, 1.3rem);
+    }
+
+    .grid-div-button {
+        margin-top: clamp(0.3rem, 1vh, 2rem);
+        padding: clamp(0.1rem, 0.6vw, 1rem) clamp(1rem, 3vw, 2rem);  
+        font-size: clamp(1rem, 2.5vw, 4rem);
+    }
+}
+
+@media (max-width: 760px) {
 
     .grid-div > :nth-child(4) {
         display: none; 
@@ -168,42 +287,76 @@
     }
 
     .grid-div-third-p {
-        font-size: clamp(0.8rem, 1.8vw, 1.6rem);
-        margin-top: clamp(0.5rem, 1.2vh, 2rem);
-        color: #3c3c3a;
+        font-size: clamp(0.8rem, 2vw, 1.6rem);
+        margin-top: clamp(0.5rem, 2vh, 2rem);
     }
 
+    .grid-div > :nth-child(5) {
+        display: none; 
+    }
+
+    .grid-div > :nth-child(6) {
+        display: none; 
+    }
+
+
     .third-section-text-div-divider {
-        height: clamp(0.4rem, 0.9vw, 1rem);
+        height: clamp(0.3rem, 0.9vw, 1rem);
         width: clamp(4rem, 9vw, 10rem);
         margin-bottom: clamp(1rem, 1.7vh, 5rem);
     }
 
     .grid-inner-first-div {
-        grid-area: 1 / 1 / 2 / 2;
-    }
-
-    .grid-div {
-        grid-template-columns: repeat(1, 1fr);
-        gap: 3vh;  
+        grid-area: 1 / 1 / 2 / 3;
     }
 
     .grid-div-p {
         font-size: clamp(0.5rem, 4vw, 3rem);
+        gap: 4vw;  
     }
-    
+
+    .grid-div {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .grid-div-place-p {
-        font-size: clamp(0.6rem, 2.8vw, 4rem);
+        font-size: clamp(0.6rem, 2.3vw, 1.3rem);
+        margin-top: clamp(1rem, 2vh, 5rem);
     }
 
     .grid-div-data-p {
-        margin-left: clamp(1rem, 2vw, 1.5rem);
-        font-size: clamp(0.6rem, 3vw, 3rem);
+        margin-top: clamp(1rem, 2.4vh, 5rem);
+        font-size: clamp(0.6rem, 2.5vw, 1.3rem);
     }
 
-    .grid-date-div {
-        margin-top: clamp(1rem, 2vh, 1.5rem);
-        margin-bottom: clamp(1rem, 2vw, 1.5rem);
-    }   
+    .grid-div-button {
+        margin-top: clamp(0.3rem, 1.4vh, 2rem);
+        padding: clamp(0.1rem, 1vw, 1rem) clamp(1rem, 4vw, 2rem);  
+        font-size: clamp(1rem, 2.5vw, 4rem);
+    }
     
+}
+
+@media (max-width: 500px) {
+
+    .grid-div-p {
+        font-size: clamp(0.5rem, 5.5vw, 3rem);
+    }
+
+    
+    .grid-div-place-p {
+        font-size: clamp(0.6rem, 2.8vw, 1.3rem);
+        margin-top: clamp(1rem, 2vh, 5rem);
+    }
+
+    .grid-div-data-p {
+        margin-top: clamp(1rem, 2.4vh, 5rem);
+        font-size: clamp(0.6rem, 3.3vw, 1.3rem);
+    }
+
+    .item {
+        padding: 15px;
+    }
+
+
 }

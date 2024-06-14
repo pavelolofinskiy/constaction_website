@@ -154,7 +154,7 @@ text-decoration: none;
 }
 
 
-@media (760px < width <= 1023px) {
+@media (760px < width <= 1200px) {
     .my-header {
         background-color: transparent;
         display: flex;
@@ -164,7 +164,7 @@ text-decoration: none;
     }
 
     .my-header-nav {
-        margin-right: 3rem;
+        margin-right: 6vw;
     }
 
     .head-checkbox {
@@ -172,7 +172,7 @@ text-decoration: none;
     }
 
     .nav-menu {
-
+        margin-left: 5vw;
         font-size: 1rem;
         color: var(--text-color);
     }
@@ -188,47 +188,12 @@ text-decoration: none;
     }
 }
 
-@media (1023px < width <= 1600px) {
+@media (1200px < width <= 6000px) {
     
     .head-checkbox {
         display: none;
     }
 
-    .my-header {
-        background-color: transparent;
-        display: flex;
-        justify-content: space-between;
-        z-index: 1000; 
-        margin-top: 2.5rem;
-    }
-
-    .my-header-nav {
-        margin-right: clamp(0.1rem, 10vw, 15rem);
-    }
-
-    .nav-menu {
-        font-size: 1.1rem;
-        color: var(--text-color);
-    }
-
-    .my-logo-div-p{
-        margin-left: 8vw;
-        font-family: Roboto;
-
-    }
-
-    .nav-toggle {
-        background-color: #f0a500;
-    }
-}
-
-
-@media (1600px < width <= 6000px) {
-
-    .head-checkbox {
-        display: none;
-    }
-    
     .my-header {
         background-color: transparent;
         display: flex;
@@ -238,17 +203,16 @@ text-decoration: none;
     }
 
     .my-header-nav {
-        margin-left: 19rem;
+        margin-left: 12.7rem;
     }
 
     .nav-menu {
-
         font-size: 1.1rem;
         color: var(--text-color);
     }
 
     .my-logo-div-p{
-        margin-right: 19rem;
+        margin-right: 13.4rem;
         font-family: Roboto;
 
     }
@@ -257,4 +221,5 @@ text-decoration: none;
         background-color: #f0a500;
     }
 }
+
 
