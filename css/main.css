@@ -111,7 +111,7 @@ text-decoration: none;
     }
 
     .my-logo-div-p{
-        margin-left: 2rem;
+        margin-left: 10vw;
         font-family: Roboto;
 
     }
@@ -222,4 +222,7 @@ text-decoration: none;
     }
 }
 
-
+.mail-div {
+    display: flex;
+    justify-content: center;
+}

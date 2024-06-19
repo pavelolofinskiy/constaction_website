@@ -16,8 +16,8 @@
     }
 
     .hero-section-div-elements {
-        margin-top: 15vh;
-        margin-bottom: 15vh;
+        margin-top: 24vh;
+        margin-bottom: 22vh;
         padding: 0 10vw; 
     }
     
@@ -145,7 +145,7 @@
 
     .hero-section-div-elements {
         margin-top: 30vh;
-        margin-left: 5vh;
+        margin-left: 10vw;
     }
 
     .hero-section-div-button-container {
@@ -171,7 +171,6 @@
         padding: 0.8rem 1.6rem;
         line-height: 20px;
         border-radius: 4px;
-        margin-left: 0.3rem;
         text-decoration: none;
         border: none;
         transition: transform 0.2s ease;
@@ -233,7 +232,6 @@
     .hero-section-div-p-tablet {
         font-size: 0.8rem;  
         width: 100%;
-        margin-left: 0.3rem;
         margin-top: 1.2rem; 
         text-align: left;
         font-family: RobotoMedium;
@@ -241,7 +239,6 @@
     }
 
     .hero-section-div-p-third {
-        margin-left: 0.3rem;
         font-size: 0.8rem;
         margin-top: 2rem; 
         font-family: RobotoMedium;

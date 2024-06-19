@@ -13,7 +13,7 @@
 }
 
 .second-section-text-div {
-    margin-top: clamp(1rem, 4vh, 8rem);
+    margin-top: clamp(1.5rem, 6vh, 8rem);
     margin-right: 5.8vw;
 }
 
@@ -101,6 +101,7 @@
     .second-section-text-div {
         max-width: 50rem;
         margin: 0;
+        margin-top: clamp(1rem, 4vh, 8rem);
     }
 
     
@@ -171,7 +172,7 @@
     .second-section-text-div {
         margin-top: 3rem;
         padding: 0;
-        margin-right: 0;
+        margin-right: 0rem;
         margin-left: 7.3rem;
     }
 

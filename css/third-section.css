@@ -41,6 +41,44 @@
     grid-area: 1 / 1 / 2 / 4;
 }
 
+@media (max-width: 1200px) {
+    .container {
+        padding: 0 5.4vw;
+    }
+
+    .item1 {
+        grid-area: 1 / 1 / 2 / 4;
+    }
+}
+
+@media (max-width: 900px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr); 
+        padding: 0 50px; 
+    }
+
+    .item1 {
+        grid-area: 1 / 1 / 2 / 3;
+    }
+}
+
+@media (max-width: 760px) {
+    .container {
+        grid-template-columns: 1fr; 
+        padding: 0 10vw; 
+    }
+
+    .item {
+        padding: 20px;
+    }
+
+    .item1 {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+}
+
+
+
 .grid-inner-div {
     background-color: #f4f2ef;
     box-sizing: border-box;
@@ -113,42 +151,6 @@
     transform: scale(0.92);
 }
 
-@media (max-width: 1200px) {
-    .container {
-        padding: 0 5.4vw;
-    }
-
-    .item1 {
-        grid-area: 1 / 1 / 2 / 4;
-    }
-}
-
-@media (max-width: 900px) {
-    .container {
-        grid-template-columns: repeat(2, 1fr); 
-        padding: 0 50px; 
-    }
-
-    .item1 {
-        grid-area: 1 / 1 / 2 / 3;
-    }
-}
-
-@media (max-width: 760px) {
-    .container {
-        grid-template-columns: 1fr; 
-        padding: 0 10vw; 
-    }
-
-    .item {
-        padding: 20px;
-    }
-
-    .item1 {
-        grid-area: 1 / 1 / 2 / 2;
-    }
-}
-
 @media (1200px < width <= 6000px) {
     .grid-div-p {
         font-size: 1.7rem;
@@ -168,6 +170,12 @@
         padding: 0.5rem, 0.8rem;  
         font-size: 1.5rem;
     }
+
+    .third-section-text-div-divider {
+        height: 0.5rem;
+        width: 6rem;
+    }
+    
 }
 
 @media (900px < width <= 1200px) {
@@ -187,8 +195,8 @@
 
 
     .third-section-text-div-divider {
-        height: clamp(0.3rem, 0.9vw, 1rem);
-        width: clamp(4rem, 9vw, 10rem);
+        height: clamp(0.2rem, 0.6vw, 1rem);
+        width: clamp(0.8rem, 7vw, 8rem);
         margin-bottom: clamp(1rem, 1.7vh, 5rem);
     }
 
@@ -301,8 +309,8 @@
 
 
     .third-section-text-div-divider {
-        height: clamp(0.3rem, 0.9vw, 1rem);
-        width: clamp(4rem, 9vw, 10rem);
+        height: clamp(0.2rem, 1vw, 1rem);
+        width: clamp(0.8rem, 12vw, 15rem);
         margin-bottom: clamp(1rem, 1.7vh, 5rem);
     }
 

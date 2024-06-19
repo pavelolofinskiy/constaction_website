@@ -15,10 +15,6 @@
 
 <header class="my-header">
         <h1 class="my-logo-div-p">Urban<span class="my-logo-div-span">Rise</span></h1>
-        <input class="head-checkbox" type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
-        </label>
         <nav class="my-header-nav">
             <a class="nav-menu" href="index.html">Home</a>
             <a class="nav-menu" href="about.php">Solutions</a>
@@ -26,6 +22,10 @@
             <a class="nav-menu" href="about.php">About</a>
             <a class="nav-menu" href="contact.php">Contact</a>
         </nav>
+        <input class="head-checkbox" type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
 
 </header>
 
@@ -173,17 +173,79 @@
     </div>
 </section>
 
-<section class="servises-section overlay3">
-    <div class="second-grid-div">
-        <div class="second-grid-inner-div">
-            <p class="second-grid-p">Residential</p>
-        </div>
-        <div class="second-grid-inner-div"></div>
-        <div class="second-grid-inner-div"></div>
-        <div class="second-grid-inner-div"></div>
-        <div class="second-grid-inner-div"></div>
-        <div class="second-grid-inner-div"></div>
-    </div>
-</section>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+</head>
+<body>
+    <h2>Contact Us</h2>
+    <form action="" method="post">
+        <label for="name" >Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="email" >Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="message"  >Message:</label><br>
+        <textarea id="message" name="message"  ></textarea><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+<div class="mail-div">
+<?php
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require 'vendor/autoload.php';
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
+
+    if (empty($name) || empty($email)) {
+        echo "All fields are required.";
+        exit;
+    }
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        echo "Invalid email format.";
+        exit;
+    }
+
+    $mail = new PHPMailer(true);
+    try {
+        // Настройки сервера
+        $mail->isSMTP();
+        $mail->Host = 'smtp.gmail.com';
+        $mail->SMTPAuth = true;
+        $mail->Username = 'lostwiks@gmail.com';  
+        $mail->Password = 'efxwvsrvvutirjvl';   
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+        $mail->Port = 587;
+
+        $mail->addAddress('lostwiks@gmail.com');  
+
+        $mail->isHTML(true);
+        $mail->Subject = 'Contact Form Submission';
+        $mail->Body    = "<h2>Сообщение</h2>
+                          <p><strong>Name:</strong> {$name}</p>
+                          <p><strong>Email:</strong> {$email}</p>
+                          <p><strong>Message:</strong><br>{$message}</p>";
+
+        $mail->send();
+        echo '<p class="myp">Message has been sent<p>';
+    } catch (Exception $e) {
+        echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+    }
+}
+
+
+?>
+
+</div>
+
 
 
