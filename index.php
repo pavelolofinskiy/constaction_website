@@ -172,13 +172,11 @@
     </div>
 </section>
 
-
-
 <section class="fourth-section overlay2">
     <div class="contact-container">
         <div class="contact-text">
             <p class="contact-text-first-p">Get Free Consultation</p>
-            <p class="contact-text-second-p">Send us an email or start a conversation by filling<br> out the form on the right. Let’s talk!</p>
+            <p class="contact-text-second-p">Send us an email or start a conversation by filling out the form on the right. Let’s talk!</p>
         </div>
         <div class="contact-form">
             <form id='contact-form' action="" method="post">
@@ -189,7 +187,10 @@
                 <label for="message">Message</label>
                 <textarea id="message" name="message"></textarea>
                 <div class='form-response' id="form-response"></div>
-                <input type="submit" value="Submit">
+                <div class='button-container'>
+                    <input class='form-response-button' type="submit" value="Submit">
+                    <div id='waiting-icon'></div>
+                </div>
             </form>
         </div>
     </div>
