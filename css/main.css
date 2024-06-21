@@ -221,8 +221,3 @@ text-decoration: none;
         background-color: #f0a500;
     }
 }
-
-.mail-div {
-    display: flex;
-    justify-content: center;
-}

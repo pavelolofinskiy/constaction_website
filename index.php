@@ -6,11 +6,12 @@
     <link rel="stylesheet" href="css\hero-section.css?version=4432134344">
     <link rel="stylesheet" href="css\second-section.css?version=123334">
     <link rel="stylesheet" href="css\third-section.css?version=34531445">
-    <link rel="stylesheet" href="css\servises-section.css">
+    <link rel="stylesheet" href="css\contact-section.css">  
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UrbanRise</title>
 </head>
+  
 <body>
 
 <header class="my-header">
@@ -28,8 +29,6 @@
         </label>
 
 </header>
-
-
 
 <main class='my-main'>
     <div class='hero-section-div row overlay'>
@@ -89,7 +88,7 @@
 
 
 
-<section id="servises" class="third-section overlay2">
+<section id="servises" class="third-section">
     <div class="container">
         <!-- <div class="grid-inner-first-div">
             <div></div>
@@ -174,78 +173,78 @@
 </section>
 
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Form</title>
-</head>
-<body>
-    <h2>Contact Us</h2>
-    <form action="" method="post">
-        <label for="name" >Name:</label><br>
-        <input type="text" id="name" name="name" required><br><br>
-        <label for="email" >Email:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
-        <label for="message"  >Message:</label><br>
-        <textarea id="message" name="message"  ></textarea><br><br>
-        <input type="submit" value="Submit">
-    </form>
+
+<section class="fourth-section overlay2">
+    <div class="contact-container">
+        <div class="contact-text">
+            <p class="contact-text-first-p">Get Free Consultation</p>
+            <p class="contact-text-second-p">Send us an email or start a conversation by filling<br> out the form on the right. Let’s talk!</p>
+        </div>
+        <div class="contact-form">
+            <form id='contact-form' action="" method="post">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message</label>
+                <textarea id="message" name="message"></textarea>
+                <div class='form-response' id="form-response"></div>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+</section>
+
+<div>
+    <?php
+    use PHPMailer\PHPMailer\PHPMailer;
+    use PHPMailer\PHPMailer\Exception;
+
+    require 'vendor/autoload.php';
+
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $message = $_POST['message'];
+
+        if (empty($name) || empty($email)) {
+            echo "All fields are required.";
+            exit;
+        }
+        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            echo "Invalid email format.";
+            exit;
+        }
+
+        $mail = new PHPMailer(true);
+        try {
+            // Настройки сервера
+            $mail->isSMTP();
+            $mail->Host = 'smtp.gmail.com';
+            $mail->SMTPAuth = true;
+            $mail->Username = 'lostwiks@gmail.com';  
+            $mail->Password = 'efxwvsrvvutirjvl';   
+            $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+            $mail->Port = 587;
+
+            $mail->addAddress('lostwiks@gmail.com');  
+
+            $mail->isHTML(true);
+            $mail->Subject = 'Contact Form Submission';
+            $mail->Body    = "<h2>Сообщение</h2>
+                            <p><strong>Name:</strong> {$name}</p>
+                            <p><strong>Email:</strong> {$email}</p>
+                            <p><strong>Message:</strong><br>{$message}</p>";
+
+            $mail->send();
+            echo '<p class="mail-form">Message has been sent<p>';
+        } catch (Exception $e) {
+            echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+        }
+    }
+    ?>
+</div>  
+<div id="form-response"></div>
+<script src='javascript/script.js'></script>
+
 </body>
-</html>
-<div class="mail-div">
-<?php
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
-
-require 'vendor/autoload.php';
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $message = $_POST['message'];
-
-    if (empty($name) || empty($email)) {
-        echo "All fields are required.";
-        exit;
-    }
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        echo "Invalid email format.";
-        exit;
-    }
-
-    $mail = new PHPMailer(true);
-    try {
-        // Настройки сервера
-        $mail->isSMTP();
-        $mail->Host = 'smtp.gmail.com';
-        $mail->SMTPAuth = true;
-        $mail->Username = 'lostwiks@gmail.com';  
-        $mail->Password = 'efxwvsrvvutirjvl';   
-        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-        $mail->Port = 587;
-
-        $mail->addAddress('lostwiks@gmail.com');  
-
-        $mail->isHTML(true);
-        $mail->Subject = 'Contact Form Submission';
-        $mail->Body    = "<h2>Сообщение</h2>
-                          <p><strong>Name:</strong> {$name}</p>
-                          <p><strong>Email:</strong> {$email}</p>
-                          <p><strong>Message:</strong><br>{$message}</p>";
-
-        $mail->send();
-        echo '<p class="myp">Message has been sent<p>';
-    } catch (Exception $e) {
-        echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
-    }
-}
-
-
-?>
-
-</div>
-
-
-

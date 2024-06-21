@@ -1,10 +1,5 @@
 
 .third-section {
-    background-color: #9FE7F5;
-    background-image: url(../img/third-section-background.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-y: center;
     padding-bottom: 5rem;
 }
 
@@ -16,10 +11,7 @@
     margin-top: 5rem;
 }
 
-.overlay2 {
-    border-image-source: linear-gradient(#ffffffa4, #beb4b4a4);
-    border-image-slice: fill 1;
-}
+
 
 .container {
     display: grid;
