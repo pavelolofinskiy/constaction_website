@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="css\main.css?version=443764">
     <link rel="stylesheet" href="css\hero-section.css?version=4432134344">
     <link rel="stylesheet" href="css\second-section.css?version=123334">
-    <link rel="stylesheet" href="css\third-section.css?version=34531445">
+    <link rel="stylesheet" href="css\third-section.css?version=34531ads445">
     <link rel="stylesheet" href="css\contact-section.css">  
     <link rel="stylesheet" href="css\footer.css">  
     <meta charset="UTF-8">
@@ -268,7 +268,7 @@
             <h3>Company</h3>
             <ul>
                 <li><a href="#">About Us</a></li>
-                <li><a href="#">Projects</a></li>
+                <li><a href="#">Projdsects</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Our Team</a></li>
             </ul>
