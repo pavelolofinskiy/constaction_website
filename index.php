@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css\second-section.css?version=123334">
     <link rel="stylesheet" href="css\third-section.css?version=34531445">
     <link rel="stylesheet" href="css\contact-section.css">  
+    <link rel="stylesheet" href="css\footer.css">  
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UrbanRise</title>
@@ -248,4 +249,152 @@
 <div id="form-response"></div>
 <script src='javascript/script.js'></script>
 
-</body>
+
+
+
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-section company">
+            <h2>UrbanRise</h2>
+            <p>We Are More Than Just Builders; We Are Creators Of Architectural Marvels. With A Passion For Excellence And An Unwavering Commitment To Quality</p>
+            <div class="social-icons">
+                <a href="#"><img src="path/to/facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="path/to/linkedin-icon.png" alt="LinkedIn"></a>
+                <a href="#"><img src="path/to/instagram-icon.png" alt="Instagram"></a>
+            </div>
+        </div>
+        <div class="footer-section links">
+            <h3>Company</h3>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Our Team</a></li>
+            </ul>
+        </div>
+        <div class="footer-section links">
+            <h3>Help</h3>
+            <ul>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Feedback</a></li>
+            </ul>
+        </div>
+        <div class="footer-section links">
+            <h3>Others</h3>
+            <ul>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Cookie</a></li>
+                <li><a href="#">Policies</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>Copyright © 2023 ADVENTOUR.</p>
+    </div>
+</footer>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: balck;
+    padding: 3rem 0;
+    color: #333;
+    border-top: 1px solid #e0e0e0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    margin: 1rem;
+    flex: 1;
+    min-width: 220px;
+}
+
+.footer-section.company {
+    max-width: 320px;
+}
+
+.footer-section.company h2 {
+    font-size: 1.8rem;
+    color: #ff8c00; /* UrbanRise branding color */
+    margin-bottom: 1rem;
+}
+
+.footer-section p {
+    font-size: 1rem;
+    margin: 1rem 0;
+    color: #666666; /* Light grey for the text */
+    line-height: 1.6;
+}
+
+.footer-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #000000; /* Black color for section headings */
+    text-transform: uppercase;
+    border-bottom: 2px solid #ff8c00;
+    display: inline-block;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 0.5rem 0;
+}
+
+.footer-section ul li a {
+    color: #333333; /* Dark grey for the links */
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 0.9rem;
+}
+
+.footer-section ul li a:hover {
+    color: #ff8c00; /* UrbanRise branding color on hover */
+}
+
+.social-icons {
+    margin-top: 1.5rem;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 1rem 2rem;
+    background-color: #f9f9f9;
+    border-top: 1px solid #e0e0e0;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: #999999; /* Light grey for the copyright text */
+    font-size: 0.9rem;
+}
+</style>
