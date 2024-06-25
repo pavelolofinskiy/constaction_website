@@ -171,8 +171,7 @@
 
     .contact-text-first-p {
         margin-bottom: 1rem;
-        font-size: clamp(1.3rem, 5.5vw, 3rem);
-        
+        font-size: clamp(1.3rem, 5.5vw, 3rem); 
     }
 
     .contact-text-second-p {
@@ -186,5 +185,32 @@
 @media (max-width: 440px) {
     .contact-text-second-p {
         padding-right: 20px;
+    }
+
+    .contact-form {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .contact-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 6rem;
+        margin-bottom: 4rem;
+        width: 1065px;
+        padding: 15px 20px; 
+        background-color: #f4f4f4;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-text {
+        padding-left: 0;
     }
 }

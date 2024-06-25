@@ -198,53 +198,53 @@
 </section>
 
 <div>
-    <?php
-    use PHPMailer\PHPMailer\PHPMailer;
-    use PHPMailer\PHPMailer\Exception;
+<?php
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
-    require 'vendor/autoload.php';
+require 'vendor/autoload.php';
 
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $name = $_POST['name'];
-        $email = $_POST['email'];
-        $message = $_POST['message'];
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
 
-        if (empty($name) || empty($email)) {
-            echo "All fields are required.";
-            exit;
-        }
-        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-            echo "Invalid email format.";
-            exit;
-        }
-
-        $mail = new PHPMailer(true);
-        try {
-            // Настройки сервера
-            $mail->isSMTP();
-            $mail->Host = 'smtp.gmail.com';
-            $mail->SMTPAuth = true;
-            $mail->Username = 'lostwiks@gmail.com';  
-            $mail->Password = 'efxwvsrvvutirjvl';   
-            $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-            $mail->Port = 587;
-
-            $mail->addAddress('lostwiks@gmail.com');  
-
-            $mail->isHTML(true);
-            $mail->Subject = 'Contact Form Submission';
-            $mail->Body    = "<h2>Сообщение</h2>
-                            <p><strong>Name:</strong> {$name}</p>
-                            <p><strong>Email:</strong> {$email}</p>
-                            <p><strong>Message:</strong><br>{$message}</p>";
-
-            $mail->send();
-            echo '<p class="mail-form">Message has been sent<p>';
-        } catch (Exception $e) {
-            echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
-        }
+    if (empty($name) || empty($email)) {
+        echo "All fields are required.";
+        exit;
     }
-    ?>
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        echo "Invalid email format.";
+        exit;
+    }
+
+    $mail = new PHPMailer(true);
+    try {
+        // Настройки сервера
+        $mail->isSMTP();
+        $mail->Host = 'smtp.gmail.com';
+        $mail->SMTPAuth = true;
+        $mail->Username = 'lostwiks@gmail.com';  
+        $mail->Password = 'efxwvsrvvutirjvl';   
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+        $mail->Port = 587;
+
+        $mail->addAddress('lostwiks@gmail.com');  
+
+        $mail->isHTML(true);
+        $mail->Subject = 'Contact Form Submission';
+        $mail->Body    = "<h2>Сообщение</h2>
+                        <p><strong>Name:</strong> {$name}</p>
+                        <p><strong>Email:</strong> {$email}</p>
+                        <p><strong>Message:</strong><br>{$message}</p>";
+
+        $mail->send();
+        echo '<p class="mail-form">Message has been sent<p>';
+    } catch (Exception $e) {
+        echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+    }
+}
+?>
 </div>  
 <div id="form-response"></div>
 <script src='javascript/script.js'></script>
