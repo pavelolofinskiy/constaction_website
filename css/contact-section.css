@@ -43,8 +43,8 @@
 .contact-container {
     display: flex;
     justify-content: space-between;
-    margin-top: 6rem;
-    margin-bottom: 4rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     width: 1065px;
     padding: 50px 20px; 
     background-color: #f4f4f4;
@@ -199,15 +199,7 @@
     }
 
     .contact-container {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 6rem;
-        margin-bottom: 4rem;
-        width: 1065px;
         padding: 15px 20px; 
-        background-color: #f4f4f4;
-        border-radius: 5px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
     .contact-text {
