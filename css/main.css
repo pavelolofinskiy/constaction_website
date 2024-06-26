@@ -5,6 +5,10 @@
     --text-color: #222220;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 @font-face {
     font-family: Roboto;
     src: url(../fonts/Roboto-Bold.ttf);
@@ -37,11 +41,11 @@ p {
 }
 
 .nav-menu {
-    margin-left: 2.8rem;
+    margin-left: 3.8rem;
     font-size: 1.25rem;
     color: var(--text-color);
     transition: all 0.2s;
-}
+}   
 
 .nav-menu:hover {
     color: #f0a500;
@@ -155,6 +159,8 @@ text-decoration: none;
 
 
 @media (760px < width <= 1200px) {
+
+
     .my-header {
         background-color: transparent;
         display: flex;
@@ -164,17 +170,19 @@ text-decoration: none;
     }
 
     .my-header-nav {
-        margin-right: 6vw;
+        margin-right: 5.6vw;
     }
 
-    .head-checkbox {
+    .my-header input,
+    .my-header label {
         display: none;
     }
 
     .nav-menu {
         margin-left: 5vw;
-        font-size: 1rem;
+        margin-left: 3.5rem;
         color: var(--text-color);
+        font-size: clamp(1rem, 2vw, 1.3rem);
     }
 
     .my-logo-div-p{
@@ -190,7 +198,8 @@ text-decoration: none;
 
 @media (1200px < width <= 6000px) {
     
-    .head-checkbox {
+    .my-header input,
+    .my-header label {
         display: none;
     }
 
@@ -203,16 +212,16 @@ text-decoration: none;
     }
 
     .my-header-nav {
-        margin-left: 12.7rem;
+        margin-left: 8.7rem;
     }
 
     .nav-menu {
-        font-size: 1.1rem;
+        font-size: 1.3rem;
         color: var(--text-color);
     }
 
     .my-logo-div-p{
-        margin-right: 13.4rem;
+        margin-right: 19rem;
         font-family: Roboto;
 
     }

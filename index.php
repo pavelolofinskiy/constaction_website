@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html >
+<html lang="en" id='home'>
 <head>
     <link rel="stylesheet" href="css\reset.css?version=432145">
     <link rel="stylesheet" href="css\main.css?version=443764">
@@ -18,11 +18,10 @@
 <header class="my-header">
         <h1 class="my-logo-div-p">Urban<span class="my-logo-div-span">Rise</span></h1>
         <nav class="my-header-nav">
-            <a class="nav-menu" href="index.html">Home</a>
-            <a class="nav-menu" href="about.php">Solutions</a>
-            <a class="nav-menu" href="about.php">Projects</a>
-            <a class="nav-menu" href="about.php">About</a>
-            <a class="nav-menu" href="contact.php">Contact</a>
+            <a class="nav-menu" href="#home">Home</a>
+            <a class="nav-menu" href="#about">About</a>
+            <a class="nav-menu" href="#projects">Projects</a>
+            <a class="nav-menu" href="#contact">Contact</a>
         </nav>
         <input class="head-checkbox" type="checkbox" id="check">
         <label for="check" class="checkbtn">
@@ -41,8 +40,8 @@
             <p class="hero-section-div-p-tablet">Your Ideas & Dreams Are Transformed By Us Into Long-<br>Lasting, Engineered Buildings</p>
             <p class="hero-section-div-p-notebooks">Your Ideas & Dreams Are Transformed By Us Into<br> Long-Lasting, Engineered Buildings</p>
             <div class="hero-section-div-button-container">
-            <button href="contact.php" class="hero-section-div-button">Contact Us</button>
-            <button href="contact.php" class="hero-section-div-button2">Free Consultation</button>
+            <a href="#contact" class="hero-section-div-button">Contact Us</a>
+            <a href="#contact" class="hero-section-div-button2">Free Consultation</a>
             <p class="hero-section-div-p-third"><span>*</span> All Our Projects Are Curated By Experts</p>
             </div>
         </div>
@@ -89,7 +88,7 @@
 
 
 
-<section id="servises" class="third-section">
+<section id="projects" class="third-section">
     <div class="container">
         <!-- <div class="grid-inner-first-div">
             <div></div>
@@ -173,7 +172,7 @@
     </div>
 </section>
 
-<section class="fourth-section overlay2">
+<section id="contact" class="fourth-section overlay2">
     <div class="contact-container">
         <div class="contact-text">
             <p class="contact-text-first-p">Get Free Consultation</p>
@@ -256,21 +255,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <footer>
     <div class="footer-container">
         <div class="footer-section company">
-            <h3 class="my-logo-div-p">Urban<span class="my-logo-div-span">Rise</span></h3>
+            <h3 class="my-logo-div-p2">Urban<span class="my-logo-div-span">Rise</span></h3>
             <p>We Are More Than Just Builders; We Are Creators Of Architectural Marvels. With A Passion For Excellence And An Unwavering Commitment To Quality</p>
         </div>
-        <div class='footer-section-image'>
+        <div class='footer-section footer-section-image'>
             <img src='img\IMG_8611_1__1_-removebg-preview(1).png'>
         </div>
-        <div class="footer-section-links">
-            <ul>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Our Team</a></li>
+        <div class="footer-section footer-section-links">
+            <ul class="left-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+            <ul class="right-links">
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
-        <div class="my-social-icons">
+        <div class="footer-section my-social-icons">
             <p>FOLLOW US</p>
             <div class="social-icons">
                 <a href="#"><img src="img\2023_Facebook_icon(1).png" alt="Facebook"></a>
@@ -281,6 +282,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </div>
     <div class="footer-bottom">
         <p>Copyright © 2023 ADVENTOUR.</p>
-    </div>
+    </div> 
 </footer>
 
