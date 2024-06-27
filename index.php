@@ -17,18 +17,33 @@
 
 <header class="my-header">
         <h1 class="my-logo-div-p">Urban<span class="my-logo-div-span">Rise</span></h1>
+
+
         <nav class="my-header-nav">
             <a class="nav-menu" href="#home">Home</a>
             <a class="nav-menu" href="#about">About</a>
             <a class="nav-menu" href="#projects">Projects</a>
             <a class="nav-menu" href="#contact">Contact</a>
         </nav>
-        <input class="head-checkbox" type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
-        </label>
+        
+
+        <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+            <span></span>
+            </label>
+
+            <ul class="menu__box">
+            <li><a class="menu__item" href="#home">Home</a></li>
+            <li><a class="menu__item" href="#about">About</a></li>
+            <li><a class="menu__item" href="#projects">Projects</a></li>
+            <li><a class="menu__item" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
 
 </header>
+
 
 <main class='my-main'>
     <div class='hero-section-div row overlay'>
@@ -247,9 +262,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </div>  
 <div id="form-response"></div>
 <script src='javascript/script.js'></script>
-
-
-
 
 
 <footer>

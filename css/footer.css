@@ -208,6 +208,11 @@ footer {
         justify-content: center;
     }
 
+    .footer-section-image img {
+        justify-content: center;
+        margin-top: 1.8rem;
+    }
+
     .my-logo-div-p2 {
         text-align: center;
     }
@@ -220,8 +225,5 @@ footer {
         max-width: none;
         margin-left: 0.2rem;
     }
-
-    
-    
 
 }

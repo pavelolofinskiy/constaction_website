@@ -5,7 +5,7 @@
     }
 
     .hero-section-div {
-        background:url(../img/hero-section-imagee.png);
+        background:url(../img/hero-section-image.png);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -15,7 +15,7 @@
 
     .hero-section-div-elements {
         margin-top: 24vh;
-        margin-bottom: 22vh;
+        margin-bottom: 14vh;
         padding: 0 10vw; 
     }
     
@@ -32,14 +32,13 @@
         font-weight: 900;
         font-size:  12vw;
         text-align: left;
-        margin-top: 5rem;
     }
     
     .hero-section-div-p-mobile {
         margin-top: 0.9rem; 
         text-align: start;
         color: var(--text-color);
-        font-size: clamp(0.4rem, 2.5vw, 50rem);
+        font-size: clamp(0.4rem, 3vw, 50rem);
         font-family: RobotoMedium;
         padding-right: 2rem;
     }
@@ -53,7 +52,7 @@
     }
 
     .hero-section-div-p-third {
-        font-size: clamp(0.4rem, 2.5vw, 50rem);
+        font-size: clamp(0.4rem, 3vw, 50rem);
         margin-top: 1.5rem; 
         font-family: RobotoMedium;
     }
@@ -132,7 +131,7 @@
 
     .hero-section-div {
         min-block-size: 90vh;
-        background:url(../img/hero-section-image2.png);
+        background:url(../img/hero-section-imagee.png);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -263,9 +262,6 @@
 
 @media (760px < width <= 1200px) {
 
-    .my-main {
-    
-    }
 
     .hero-section-div { 
         background-size: cover;
@@ -322,12 +318,12 @@
 
     .hero-section-div-p-third {
         font-size: clamp(0.5rem, 1.1vw, 8rem);
-        margin-top: clamp(0.1rem, 4.4vw, 8rem);
+        margin-top: clamp(0.1rem, 3.6vw, 8rem);
         font-family: RobotoMedium;
     }
     
     .hero-section-div-button-container {
-        margin-top: clamp(0.5rem, 4.8vw, 8rem);
+        margin-top: clamp(0.5rem, 3.6vw, 8rem);
       
     }
 
