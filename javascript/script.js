@@ -30,3 +30,15 @@ document.getElementById('contact-form').addEventListener('submit', function(even
 
     xhr.send(formData);
 });
+
+document.querySelectorAll('.menu__item').forEach(item => {
+    item.addEventListener('click', () => {
+        document.getElementById('menu__toggle').checked = false;
+    });
+});
+
+document.querySelector('.menu__btn').addEventListener('click', (e) => {
+    const checkbox = document.getElementById('menu__toggle');
+    checkbox.checked = !checkbox.checked;
+    e.preventDefault(); 
+});
