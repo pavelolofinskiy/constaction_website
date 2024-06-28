@@ -125,7 +125,7 @@
                 <p id="data-first" class="grid-div-place-p">Portland, OR</p>
                 <div class="grid-date-div">
                     <p id="data-first" class="grid-div-data-p">Buiding &nbsp;&nbsp;&nbsp;&nbsp; January 23</p>
-                    <a onclick="location.href='first_project.html'" class="grid-div-button">></a>
+                    <a onclick="location.href='project.php?project=project1'" class="grid-div-button">></a>
                 </div>
             </div>
         </div>
@@ -136,7 +136,7 @@
                 <p id="data-first" class="grid-div-place-p">Seattle, WA</p>
                 <div class="grid-date-div">
                     <p id="data-first" class="grid-div-data-p">Interior &nbsp;&nbsp;&nbsp;&nbsp; April 3</p>
-                    <a onclick="location.href='first_project.html'"class="grid-div-button">></a>
+                    <a onclick="location.href='project.php?project=project2'" class="grid-div-button">></a>
                 </div>
             </div>
         </div>
@@ -147,7 +147,7 @@
                 <p id="data-first" class="grid-div-place-p">Hillsboro, OR</p>
                 <div class="grid-date-div">
                     <p id="data-first" class="grid-div-data-p">Buiding &nbsp;&nbsp;&nbsp;&nbsp; August 27</p>
-                    <a onclick="location.href='first_project.html'" class="grid-div-button">></a>
+                    <a onclick="location.href='project.php?project=project3'" class="grid-div-button">></a>
                 </div>
             </div>
         </div>
@@ -158,7 +158,7 @@
                 <p id="data-first" class="grid-div-place-p">Seattle, WA</p>
                 <div class="grid-date-div">
                     <p id="data-first" class="grid-div-data-p">Buiding &nbsp;&nbsp;&nbsp;&nbsp; June 8</p>
-                    <a onclick="location.href='first_project.html'" class="grid-div-button">></a>
+                    <a onclick="location.href='project.php?project=project4'" class="grid-div-button">></a>
                 </div>
             </div>
         </div>
@@ -169,7 +169,7 @@
                 <p id="data-first" class="grid-div-place-p">Portland, OR</p>
                 <div class="grid-date-div">
                     <p id="data-first" class="grid-div-data-p">Renewal &nbsp;&nbsp;&nbsp;&nbsp; October 17</p>
-                    <a onclick="location.href='first_project.html'"  class="grid-div-button">></a>
+                    <a onclick="location.href='project.php?project=project5'" class="grid-div-button">></a>
                 </div>
             </div>
         </div>
@@ -180,7 +180,7 @@
                 <p id="data-first" class="grid-div-place-p">Hillsboro, OR </p>
                 <div class="grid-date-div">
                     <p id="data-first" class="grid-div-data-p">Buiding &nbsp;&nbsp;&nbsp;&nbsp; July 12</p>
-                    <a onclick="location.href='first_project.html'"  class="grid-div-button">></a>
+                    <a onclick="location.href='project.php?project=project6'" class="grid-div-button">></a>
                 </div>
             </div>
         </div>

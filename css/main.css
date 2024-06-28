@@ -155,7 +155,7 @@ height: 100%;
 margin: 0;
 padding: 80px 0;
 list-style: none;
-background-color: #ECEFF1;
+background-color: var(--general-background);
 box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
 transition-duration: .25s;
 }
@@ -215,8 +215,6 @@ background-color: #CFD8DC;
         margin-top: 8px;
         transition: all 0.3s ease-in-out;
     }
-    
-
 
 }
 
@@ -304,7 +302,7 @@ background-color: #CFD8DC;
         background-color: #f0a500;
     }
 
-    .burger {
+    .hamburger-menu {
         display: none;
     }
 
