@@ -5,7 +5,7 @@
     }
 
     .hero-section-div {
-        background:url(../img/hero-section-image.png);
+        background:url(../img/pro1.jpg.png);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -130,8 +130,8 @@
 @media (507px <= width <= 760px)   {
 
     .hero-section-div {
-        min-block-size: 90vh;
-        background:url(../img/hero-section-imagee.png);
+
+        background:url(../img/pro1.jpg.png);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -145,8 +145,9 @@
     }
 
     .hero-section-div-elements {
-        margin-top: 30vh;
+        margin-top: 25vh;
         margin-left: 10vw;
+        margin-bottom: 20vh;
     }
 
     .hero-section-div-button-container {
