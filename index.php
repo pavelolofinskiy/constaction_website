@@ -1,11 +1,11 @@
 <!DOCTYPE html >
 <html lang="en" id='home'>
 <head>
-    <link rel="stylesheet" href="css\reset.css?version=432145">
-    <link rel="stylesheet" href="css\main.css?version=443764">
-    <link rel="stylesheet" href="css\hero-section.css?version=4432134344">
-    <link rel="stylesheet" href="css\second-section.css?version=123334">
-    <link rel="stylesheet" href="css\third-section.css?version=34531ads445">
+    <link rel="stylesheet" href="css\reset.css?version=432adsf145">
+    <link rel="stylesheet" href="css\main.css?version=4437fad64">
+    <link rel="stylesheet" href="css\hero-section.css?version=4432da134344">
+    <link rel="stylesheet" href="css\second-section.css?version=123dfas334">
+    <link rel="stylesheet" href="css\third-section.css?version=3453adf1ads445">
     <link rel="stylesheet" href="css\contact-section.css">  
     <link rel="stylesheet" href="css\footer.css">  
     <meta charset="UTF-8">
